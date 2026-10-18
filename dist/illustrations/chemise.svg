@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180" role="img" aria-labelledby="title"><title id="title">chemise</title><defs>
+<linearGradient id="red" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f77d60"/><stop offset="1" stop-color="#cc413d"/></linearGradient>
+<linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe19a"/><stop offset="1" stop-color="#eeb950"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4c776"/><stop offset="1" stop-color="#5c9367"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fc5d1"/><stop offset="1" stop-color="#44869e"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfb37f"/><stop offset="1" stop-color="#b97e4f"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ceaa"/><stop offset="1" stop-color="#e2a982"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8dcc7"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e9e8"/><stop offset="1" stop-color="#aab9be"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb852"/><stop offset="1" stop-color="#ed812e"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b59fc5"/><stop offset="1" stop-color="#82668f"/></linearGradient>
+</defs><ellipse cx="100" cy="164" rx="57" ry="7" fill="#535a47" opacity=".09"/><g stroke="#38474b" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m69 24 31 9 31-9 36 27-17 33-17-9 10 82H57l10-82-17 9-17-33Z" fill="url(#cream)"/><path d="m69 24 31 9-17 29-17-18Zm62 0-31 9 17 29 17-18Z" fill="#c6d5d0"/><path d="M100 43v112M67 75l-7-28m73 28 7-28" fill="none" stroke="#9faeaa"/><path d="M111 78h19v20h-19Z" fill="#eee6d5"/><g fill="#91a6aa" stroke="none"><circle cx="100" cy="74" r="2.3"/><circle cx="100" cy="96" r="2.3"/><circle cx="100" cy="118" r="2.3"/><circle cx="100" cy="140" r="2.3"/></g></g></svg>

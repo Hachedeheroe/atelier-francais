@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180" role="img" aria-labelledby="title"><title id="title">lait</title><defs>
+<linearGradient id="red" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f77d60"/><stop offset="1" stop-color="#cc413d"/></linearGradient>
+<linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe19a"/><stop offset="1" stop-color="#eeb950"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4c776"/><stop offset="1" stop-color="#5c9367"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fc5d1"/><stop offset="1" stop-color="#44869e"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfb37f"/><stop offset="1" stop-color="#b97e4f"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ceaa"/><stop offset="1" stop-color="#e2a982"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8dcc7"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e9e8"/><stop offset="1" stop-color="#aab9be"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb852"/><stop offset="1" stop-color="#ed812e"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b59fc5"/><stop offset="1" stop-color="#82668f"/></linearGradient>
+</defs><ellipse cx="100" cy="164" rx="57" ry="7" fill="#535a47" opacity=".09"/><g stroke="#38474b" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m61 52 17-26h43l18 26v101H61Z" fill="url(#cream)"/><path d="m61 52 18-4h43l17 4-18 12H78Z" fill="#d7e9e8"/><path d="m79 26 1 22m41-22 1 22" fill="none"/><path d="M61 84h78v46H61Z" fill="url(#blue)"/><path d="M95 92c-5 9-13 16-13 24a13 13 0 0 0 26 0c0-8-8-15-13-24Z" fill="#fffaf0" stroke="none"/><path d="m121 64 18-12v101h-18Z" fill="#d2dfda"/><path d="m121 84 18-7v46l-18 7Z" fill="#38778e"/></g></svg>

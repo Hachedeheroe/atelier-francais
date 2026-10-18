@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180" role="img" aria-labelledby="title"><title id="title">oreille</title><defs>
+<linearGradient id="red" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f77d60"/><stop offset="1" stop-color="#cc413d"/></linearGradient>
+<linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe19a"/><stop offset="1" stop-color="#eeb950"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4c776"/><stop offset="1" stop-color="#5c9367"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fc5d1"/><stop offset="1" stop-color="#44869e"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfb37f"/><stop offset="1" stop-color="#b97e4f"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ceaa"/><stop offset="1" stop-color="#e2a982"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8dcc7"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e9e8"/><stop offset="1" stop-color="#aab9be"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb852"/><stop offset="1" stop-color="#ed812e"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b59fc5"/><stop offset="1" stop-color="#82668f"/></linearGradient>
+</defs><ellipse cx="100" cy="164" rx="57" ry="7" fill="#535a47" opacity=".09"/><g stroke="#38474b" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M130 112c20-16 25-34 20-55-6-28-31-43-54-35-22 8-36 30-30 54 4 16 10 18 10 32 0 17 6 45 27 46 16 0 19-13 19-25 0-8 2-12 8-17Z" fill="url(#skin)"/><path d="M82 68c-7-26 19-43 37-28 16 13 18 38 6 53-8 10-21 9-22 27" stroke="#c08c6f" stroke-width="7" fill="none"/><path d="M88 81q15-25 28-7 6 11-8 19m-20 3q-10 4-6 17 2 6 9 6" stroke="#bd856b" stroke-width="5" fill="none"/><path d="M101 139q6 5 11-1" fill="none" stroke="#f7d2ad" stroke-width="5"/></g></svg>

@@ -1,0 +1,1807 @@
+{
+  "meta": {
+    "version": 1,
+    "imageCount": 144,
+    "themeCount": 16,
+    "source": "Frances_Anki_A0_C2",
+    "imageMethod": "Imágenes fotorrealistas generadas con IA; audios y frases originales del material.",
+    "grid": {
+      "columns": 3,
+      "rows": 3
+    }
+  },
+  "themes": [
+    {
+      "id": "fruits",
+      "fr": "Les fruits",
+      "es": "Frutas",
+      "color": "#f8ddcf",
+      "sheet": "images/photos/fruits.webp",
+      "art": [
+        "pomme",
+        "poire"
+      ],
+      "items": [
+        {
+          "id": "fr_752c14ea195c",
+          "slug": "pomme",
+          "subjectEnglish": "one red apple with a short stem",
+          "crop": {
+            "width": 305.85366,
+            "height": 314.28571,
+            "x": 0.47393,
+            "y": 0.46784
+          }
+        },
+        {
+          "id": "fr_93ef5dde44b5",
+          "slug": "banane",
+          "subjectEnglish": "one ripe yellow banana",
+          "crop": {
+            "width": 305.85366,
+            "height": 314.28571,
+            "x": 50.0,
+            "y": 0.46784
+          }
+        },
+        {
+          "id": "fr_ef0ebbb77298",
+          "slug": "orange",
+          "subjectEnglish": "one whole orange fruit with textured peel",
+          "crop": {
+            "width": 305.85366,
+            "height": 314.28571,
+            "x": 99.52607,
+            "y": 0.46784
+          }
+        },
+        {
+          "id": "fr_6440297652cc",
+          "slug": "fraise",
+          "subjectEnglish": "one red strawberry with green leaves",
+          "crop": {
+            "width": 305.85366,
+            "height": 323.19588,
+            "x": 0.47393,
+            "y": 47.45958
+          }
+        },
+        {
+          "id": "fr_e4ce56240e94",
+          "slug": "poire",
+          "subjectEnglish": "one green pear",
+          "crop": {
+            "width": 305.85366,
+            "height": 323.19588,
+            "x": 50.0,
+            "y": 47.45958
+          }
+        },
+        {
+          "id": "fr_961421a681ee",
+          "slug": "citron",
+          "subjectEnglish": "one whole yellow lemon",
+          "crop": {
+            "width": 305.85366,
+            "height": 323.19588,
+            "x": 99.52607,
+            "y": 47.45958
+          }
+        },
+        {
+          "id": "fr_755bd810d2be",
+          "slug": "ananas",
+          "subjectEnglish": "one whole pineapple with crown",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 0.47393,
+            "y": 99.50678
+          }
+        },
+        {
+          "id": "fr_3c8d1d6593c8",
+          "slug": "mangue",
+          "subjectEnglish": "one whole ripe mango",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 50.0,
+            "y": 99.50678
+          }
+        },
+        {
+          "id": "fr_0c58da9d57a0",
+          "slug": "kiwi",
+          "subjectEnglish": "one brown kiwi fruit beside one half showing its green interior",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 99.52607,
+            "y": 99.50678
+          }
+        }
+      ]
+    },
+    {
+      "id": "legumes",
+      "fr": "Les légumes",
+      "es": "Verduras",
+      "color": "#d9ebce",
+      "sheet": "images/photos/legumes.webp",
+      "art": [
+        "carotte",
+        "courgette"
+      ],
+      "items": [
+        {
+          "id": "fr_d7b2118c04bb",
+          "slug": "carotte",
+          "subjectEnglish": "one orange carrot with a small green leafy top",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 0.47393,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_13f20098aaeb",
+          "slug": "tomate",
+          "subjectEnglish": "one ripe red tomato with green stem",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 50.0,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_7b827e5f9ac6",
+          "slug": "pomme de terre",
+          "subjectEnglish": "one unpeeled brown potato",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 99.52607,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_b6deec1ed548",
+          "slug": "oignon",
+          "subjectEnglish": "one whole golden onion",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 0.47393,
+            "y": 48.95349
+          }
+        },
+        {
+          "id": "fr_1f30d53f1df6",
+          "slug": "courgette",
+          "subjectEnglish": "one whole dark green zucchini",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 50.0,
+            "y": 48.95349
+          }
+        },
+        {
+          "id": "fr_7c108dd0f98a",
+          "slug": "aubergine",
+          "subjectEnglish": "one whole shiny purple eggplant",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 99.52607,
+            "y": 48.95349
+          }
+        },
+        {
+          "id": "fr_88825996b4e9",
+          "slug": "poivron",
+          "subjectEnglish": "one whole red bell pepper",
+          "crop": {
+            "width": 305.85366,
+            "height": 293.67681,
+            "x": 0.47393,
+            "y": 99.51632
+          }
+        },
+        {
+          "id": "fr_47d28ca978fc",
+          "slug": "concombre",
+          "subjectEnglish": "one whole dark green cucumber",
+          "crop": {
+            "width": 305.85366,
+            "height": 293.67681,
+            "x": 50.0,
+            "y": 99.51632
+          }
+        },
+        {
+          "id": "fr_9e2b194d01ab",
+          "slug": "brocoli",
+          "subjectEnglish": "one head of green broccoli",
+          "crop": {
+            "width": 305.85366,
+            "height": 293.67681,
+            "x": 99.52607,
+            "y": 99.51632
+          }
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "fr": "À table",
+      "es": "Alimentos y bebidas",
+      "color": "#f7e7b7",
+      "sheet": "images/photos/table.webp",
+      "art": [
+        "pain",
+        "croissant"
+      ],
+      "items": [
+        {
+          "id": "fr_4582cd02ee9f",
+          "slug": "pain",
+          "subjectEnglish": "one crusty French bread loaf",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 0.47393,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_52f78ec96f58",
+          "slug": "fromage",
+          "subjectEnglish": "one distinct wedge of pale yellow cheese",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 50.0,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_906e82256aa4",
+          "slug": "lait",
+          "subjectEnglish": "one clear glass filled with white milk",
+          "crop": {
+            "width": 305.85366,
+            "height": 306.60147,
+            "x": 99.52607,
+            "y": 0.47337
+          }
+        },
+        {
+          "id": "fr_ee6effbab261",
+          "slug": "oeuf",
+          "subjectEnglish": "one whole pale brown chicken egg",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 49.88152
+          }
+        },
+        {
+          "id": "fr_93d13d4b9d1f",
+          "slug": "croissant",
+          "subjectEnglish": "one golden flaky croissant",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 49.88152
+          }
+        },
+        {
+          "id": "fr_1f6ccd2be75f",
+          "slug": "pizza",
+          "subjectEnglish": "one whole round pizza with tomato and melted cheese",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 49.88152
+          }
+        },
+        {
+          "id": "fr_2aa54b810e7f",
+          "slug": "yaourt",
+          "subjectEnglish": "one plain yogurt in a small open cup",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 0.47393,
+            "y": 99.5255
+          }
+        },
+        {
+          "id": "fr_7dfb1aed8355",
+          "slug": "gateau",
+          "subjectEnglish": "one slice of a layered sponge cake on a small white plate",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 50.0,
+            "y": 99.5255
+          }
+        },
+        {
+          "id": "fr_849ddd456f56",
+          "slug": "eau",
+          "subjectEnglish": "one clear glass filled with transparent water",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 99.52607,
+            "y": 99.5255
+          }
+        }
+      ]
+    },
+    {
+      "id": "animaux",
+      "fr": "Les animaux familiers",
+      "es": "Animales de casa y de la granja",
+      "color": "#e5d4bd",
+      "sheet": "images/photos/animaux.webp",
+      "art": [
+        "chat",
+        "cheval"
+      ],
+      "items": [
+        {
+          "id": "fr_7ecde348ff9c",
+          "slug": "chat",
+          "subjectEnglish": "one domestic short-haired cat sitting",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 0.47393,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_bb58b640eddd",
+          "slug": "chien",
+          "subjectEnglish": "one friendly medium-sized dog standing",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 50.0,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_5ace7a530d46",
+          "slug": "oiseau",
+          "subjectEnglish": "one small songbird perched on a bare twig",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 99.52607,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_1133990592d5",
+          "slug": "poisson",
+          "subjectEnglish": "one whole fresh silver fish in side view, complete body visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 0.47393,
+            "y": 47.94842
+          }
+        },
+        {
+          "id": "fr_042ebebbb4bb",
+          "slug": "cheval",
+          "subjectEnglish": "one brown horse standing in side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 50.0,
+            "y": 47.94842
+          }
+        },
+        {
+          "id": "fr_e1b588bfe640",
+          "slug": "vache",
+          "subjectEnglish": "one black-and-white dairy cow standing",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 99.52607,
+            "y": 47.94842
+          }
+        },
+        {
+          "id": "fr_663194f2b912",
+          "slug": "lapin",
+          "subjectEnglish": "one small rabbit sitting with long upright ears",
+          "crop": {
+            "width": 305.85366,
+            "height": 290.27778,
+            "x": 0.47393,
+            "y": 99.51338
+          }
+        },
+        {
+          "id": "fr_ee4f330d049c",
+          "slug": "cochon",
+          "subjectEnglish": "one pink pig standing",
+          "crop": {
+            "width": 305.85366,
+            "height": 290.27778,
+            "x": 50.0,
+            "y": 99.51338
+          }
+        },
+        {
+          "id": "fr_329a03c9a02d",
+          "slug": "mouton",
+          "subjectEnglish": "one white woolly sheep standing",
+          "crop": {
+            "width": 305.85366,
+            "height": 290.27778,
+            "x": 99.52607,
+            "y": 99.51338
+          }
+        }
+      ]
+    },
+    {
+      "id": "sauvages",
+      "fr": "Les animaux sauvages",
+      "es": "Animales salvajes",
+      "color": "#e5d3b8",
+      "sheet": "images/photos/sauvages.webp",
+      "art": [
+        "lion",
+        "renard"
+      ],
+      "items": [
+        {
+          "id": "fr_eaf14a01af23",
+          "slug": "lion",
+          "subjectEnglish": "one adult male lion with a full mane",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_c557c8fce1c6",
+          "slug": "tigre",
+          "subjectEnglish": "one adult orange tiger with black stripes",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_99a02f8802f8",
+          "slug": "elephant",
+          "subjectEnglish": "one African elephant with trunk and tusks visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_4967907e20d8",
+          "slug": "singe",
+          "subjectEnglish": "one brown macaque monkey sitting",
+          "crop": {
+            "width": 305.85366,
+            "height": 330.0,
+            "x": 0.47393,
+            "y": 48.28375
+          }
+        },
+        {
+          "id": "fr_9cc140dd8133",
+          "slug": "renard",
+          "subjectEnglish": "one red fox with bushy tail",
+          "crop": {
+            "width": 305.85366,
+            "height": 330.0,
+            "x": 50.0,
+            "y": 48.28375
+          }
+        },
+        {
+          "id": "fr_b460b91e0a57",
+          "slug": "loup",
+          "subjectEnglish": "one grey wolf standing",
+          "crop": {
+            "width": 305.85366,
+            "height": 330.0,
+            "x": 99.52607,
+            "y": 48.28375
+          }
+        },
+        {
+          "id": "fr_48537f613ab8",
+          "slug": "ours",
+          "subjectEnglish": "one brown bear standing on all four legs",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.0,
+            "x": 0.47393,
+            "y": 99.5086
+          }
+        },
+        {
+          "id": "fr_99fca7d22921",
+          "slug": "cerf",
+          "subjectEnglish": "one stag deer with branching antlers",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.0,
+            "x": 50.0,
+            "y": 99.5086
+          }
+        },
+        {
+          "id": "fr_9f5a66ffa0c3",
+          "slug": "ecureuil",
+          "subjectEnglish": "one red squirrel with a bushy tail",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.0,
+            "x": 99.52607,
+            "y": 99.5086
+          }
+        }
+      ]
+    },
+    {
+      "id": "petites-betes",
+      "fr": "Les petites bêtes",
+      "es": "Pequeños animales y reptiles",
+      "color": "#d8e6cf",
+      "sheet": "images/photos/petites-betes.webp",
+      "art": [
+        "abeille",
+        "mouche"
+      ],
+      "items": [
+        {
+          "id": "fr_bec48e509920",
+          "slug": "abeille",
+          "subjectEnglish": "one honeybee in a clear macro view with yellow and black fuzzy abdomen",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_28f0b0e96dcf",
+          "slug": "fourmi",
+          "subjectEnglish": "one black ant in clear macro side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_f1f0b88fae1e",
+          "slug": "papillon",
+          "subjectEnglish": "one butterfly with its two wings spread open",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_f498022915b5",
+          "slug": "araignee",
+          "subjectEnglish": "one small brown spider with eight legs clearly visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_6545d8cf0a77",
+          "slug": "mouche",
+          "subjectEnglish": "one housefly in clear macro side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_39c45779f07e",
+          "slug": "moustique",
+          "subjectEnglish": "one mosquito with thin legs and long proboscis",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_770cffbcda10",
+          "slug": "tortue",
+          "subjectEnglish": "one land tortoise showing its shell and four legs",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_ae76c076acbb",
+          "slug": "grenouille",
+          "subjectEnglish": "one small green frog in crouching pose",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_60a316299dfb",
+          "slug": "serpent",
+          "subjectEnglish": "one harmless green snake loosely coiled, no other animals",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 99.52607
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuisine",
+      "fr": "Les ustensiles",
+      "es": "Utensilios de cocina",
+      "color": "#f1d5c8",
+      "sheet": "images/photos/cuisine.webp",
+      "art": [
+        "casserole",
+        "cafetiere"
+      ],
+      "items": [
+        {
+          "id": "fr_096deddac2f3",
+          "slug": "casserole",
+          "subjectEnglish": "one stainless-steel saucepan with a single long handle",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 0.47393,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_50d7eec13738",
+          "slug": "poele",
+          "subjectEnglish": "one shallow black frying pan with long handle",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 50.0,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_44b15b2b2080",
+          "slug": "bol",
+          "subjectEnglish": "one simple round ceramic bowl, empty",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 99.52607,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_25d4bd38e544",
+          "slug": "bouilloire",
+          "subjectEnglish": "one electric kettle with handle and spout",
+          "crop": {
+            "width": 305.85366,
+            "height": 304.36893,
+            "x": 0.47393,
+            "y": 49.76247
+          }
+        },
+        {
+          "id": "fr_c5b54701e1d3",
+          "slug": "cafetiere",
+          "subjectEnglish": "one glass coffee maker with filter cone and carafe",
+          "crop": {
+            "width": 305.85366,
+            "height": 304.36893,
+            "x": 50.0,
+            "y": 49.76247
+          }
+        },
+        {
+          "id": "fr_1eca404a18c4",
+          "slug": "grille-pain",
+          "subjectEnglish": "one compact two-slot toaster",
+          "crop": {
+            "width": 305.85366,
+            "height": 304.36893,
+            "x": 99.52607,
+            "y": 49.76247
+          }
+        },
+        {
+          "id": "fr_26a4109a58ef",
+          "slug": "passoire",
+          "subjectEnglish": "one metal colander with small holes",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 0.47393,
+            "y": 99.5255
+          }
+        },
+        {
+          "id": "fr_e0d33ec63ed4",
+          "slug": "louche",
+          "subjectEnglish": "one stainless-steel soup ladle",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 50.0,
+            "y": 99.5255
+          }
+        },
+        {
+          "id": "fr_db416b15adba",
+          "slug": "fouet",
+          "subjectEnglish": "one metal balloon whisk",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.10949,
+            "x": 99.52607,
+            "y": 99.5255
+          }
+        }
+      ]
+    },
+    {
+      "id": "maison",
+      "fr": "À la maison",
+      "es": "Casa y electrodomésticos",
+      "color": "#d3e3ee",
+      "sheet": "images/photos/maison.webp",
+      "art": [
+        "porte",
+        "four"
+      ],
+      "items": [
+        {
+          "id": "fr_675c42101074",
+          "slug": "porte",
+          "subjectEnglish": "one closed white interior door in a plain frame",
+          "crop": {
+            "width": 305.85366,
+            "height": 321.53846,
+            "x": 0.47393,
+            "y": 0.46296
+          }
+        },
+        {
+          "id": "fr_a3acf8cda9ea",
+          "slug": "fenetre",
+          "subjectEnglish": "one white-framed glass window, complete frame visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 321.53846,
+            "x": 50.0,
+            "y": 0.46296
+          }
+        },
+        {
+          "id": "fr_c3ee137d4f22",
+          "slug": "table",
+          "subjectEnglish": "one simple wooden dining table, no chairs",
+          "crop": {
+            "width": 305.85366,
+            "height": 321.53846,
+            "x": 99.52607,
+            "y": 0.46296
+          }
+        },
+        {
+          "id": "fr_c64ae5ee3944",
+          "slug": "chaise",
+          "subjectEnglish": "one simple wooden dining chair",
+          "crop": {
+            "width": 305.85366,
+            "height": 322.36504,
+            "x": 0.47393,
+            "y": 46.47399
+          }
+        },
+        {
+          "id": "fr_9f8f7eec5dea",
+          "slug": "four",
+          "subjectEnglish": "one modern standalone kitchen oven with glass door",
+          "crop": {
+            "width": 305.85366,
+            "height": 322.36504,
+            "x": 50.0,
+            "y": 46.47399
+          }
+        },
+        {
+          "id": "fr_f0382ddbe5c9",
+          "slug": "refrigerateur",
+          "subjectEnglish": "one closed silver refrigerator",
+          "crop": {
+            "width": 305.85366,
+            "height": 322.36504,
+            "x": 99.52607,
+            "y": 46.47399
+          }
+        },
+        {
+          "id": "fr_a0771b0da7e1",
+          "slug": "lave-linge",
+          "subjectEnglish": "one white front-loading washing machine",
+          "crop": {
+            "width": 305.85366,
+            "height": 278.04878,
+            "x": 0.47393,
+            "y": 99.50187
+          }
+        },
+        {
+          "id": "fr_f06d960215b2",
+          "slug": "aspirateur",
+          "subjectEnglish": "one compact vacuum cleaner with hose",
+          "crop": {
+            "width": 305.85366,
+            "height": 278.04878,
+            "x": 50.0,
+            "y": 99.50187
+          }
+        },
+        {
+          "id": "fr_b72347a722b7",
+          "slug": "lampe",
+          "subjectEnglish": "one modern table lamp with a fabric shade",
+          "crop": {
+            "width": 305.85366,
+            "height": 278.04878,
+            "x": 99.52607,
+            "y": 99.50187
+          }
+        }
+      ]
+    },
+    {
+      "id": "meubles",
+      "fr": "Mon intérieur",
+      "es": "Muebles y decoración",
+      "color": "#dcd7ed",
+      "sheet": "images/photos/meubles.webp",
+      "art": [
+        "lit",
+        "miroir"
+      ],
+      "items": [
+        {
+          "id": "fr_f12ecf748ae9",
+          "slug": "lit",
+          "subjectEnglish": "one neatly made bed with plain bedding",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 0.47393,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_c37fe976d3ce",
+          "slug": "canape",
+          "subjectEnglish": "one two-seat fabric sofa",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 50.0,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_e54a02ebf1aa",
+          "slug": "armoire",
+          "subjectEnglish": "one freestanding wooden wardrobe with two closed doors",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 99.52607,
+            "y": 0.46674
+          }
+        },
+        {
+          "id": "fr_328ff22355fa",
+          "slug": "etagere",
+          "subjectEnglish": "one open freestanding bookshelf, mostly empty",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 0.47393,
+            "y": 47.72462
+          }
+        },
+        {
+          "id": "fr_d78b1dd2cd9d",
+          "slug": "miroir",
+          "subjectEnglish": "one oval wall mirror with a simple frame",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 50.0,
+            "y": 47.72462
+          }
+        },
+        {
+          "id": "fr_014c704a55a7",
+          "slug": "tapis",
+          "subjectEnglish": "one flat rectangular woven rug, top view",
+          "crop": {
+            "width": 305.85366,
+            "height": 315.86902,
+            "x": 99.52607,
+            "y": 47.72462
+          }
+        },
+        {
+          "id": "fr_c17cb6a925cc",
+          "slug": "rideau",
+          "subjectEnglish": "one pair of plain curtains hanging from a rod",
+          "crop": {
+            "width": 305.85366,
+            "height": 287.61468,
+            "x": 0.47393,
+            "y": 99.511
+          }
+        },
+        {
+          "id": "fr_0f7a9c40a95b",
+          "slug": "coussin",
+          "subjectEnglish": "one square fabric throw cushion",
+          "crop": {
+            "width": 305.85366,
+            "height": 287.61468,
+            "x": 50.0,
+            "y": 99.511
+          }
+        },
+        {
+          "id": "fr_f43a60bfe31f",
+          "slug": "fauteuil",
+          "subjectEnglish": "one upholstered armchair",
+          "crop": {
+            "width": 305.85366,
+            "height": 287.61468,
+            "x": 99.52607,
+            "y": 99.511
+          }
+        }
+      ]
+    },
+    {
+      "id": "vetements",
+      "fr": "Dans mon armoire",
+      "es": "Ropa",
+      "color": "#edd8df",
+      "sheet": "images/photos/vetements.webp",
+      "art": [
+        "robe",
+        "manteau"
+      ],
+      "items": [
+        {
+          "id": "fr_341b3b3bddab",
+          "slug": "robe",
+          "subjectEnglish": "one knee-length summer dress on a hanger",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_10699f6cd803",
+          "slug": "pantalon",
+          "subjectEnglish": "one pair of blue trousers laid flat",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_32c10e77240b",
+          "slug": "chemise",
+          "subjectEnglish": "one long-sleeved white button-down shirt on a hanger",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_83871624ed2a",
+          "slug": "chaussure",
+          "subjectEnglish": "one leather closed-toe shoe, side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_eaf81e7e08b5",
+          "slug": "manteau",
+          "subjectEnglish": "one knee-length wool winter coat on a hanger",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_aea88b75d31d",
+          "slug": "veste",
+          "subjectEnglish": "one waist-length fitted jacket on a hanger",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_969b01ecd58a",
+          "slug": "jupe",
+          "subjectEnglish": "one knee-length pleated skirt on a hanger",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_c872d5564551",
+          "slug": "pull",
+          "subjectEnglish": "one knitted sweater laid flat",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_f21dad57bcbf",
+          "slug": "tee-shirt",
+          "subjectEnglish": "one plain short-sleeved cotton T-shirt laid flat",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 99.52607
+          }
+        }
+      ]
+    },
+    {
+      "id": "accessoires",
+      "fr": "Les accessoires",
+      "es": "Accesorios",
+      "color": "#efe0c4",
+      "sheet": "images/photos/accessoires.webp",
+      "art": [
+        "parapluie",
+        "ceinture"
+      ],
+      "items": [
+        {
+          "id": "fr_c34ad7cbd6a5",
+          "slug": "parapluie",
+          "subjectEnglish": "one open umbrella with curved handle",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_0dc4801642d9",
+          "slug": "chapeau",
+          "subjectEnglish": "one brimmed felt hat",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_4535190121bf",
+          "slug": "echarpe",
+          "subjectEnglish": "one long knitted scarf loosely folded",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_e88e0f16c3d9",
+          "slug": "gant",
+          "subjectEnglish": "one winter glove with five distinct fingers",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 0.47393,
+            "y": 49.53052
+          }
+        },
+        {
+          "id": "fr_3443dfbe3f79",
+          "slug": "ceinture",
+          "subjectEnglish": "one leather belt with metal buckle",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 50.0,
+            "y": 49.53052
+          }
+        },
+        {
+          "id": "fr_182ec539a769",
+          "slug": "casquette",
+          "subjectEnglish": "one baseball cap with curved visor",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 99.52607,
+            "y": 49.53052
+          }
+        },
+        {
+          "id": "fr_5cabc4cb407d",
+          "slug": "bonnet",
+          "subjectEnglish": "one knitted winter beanie hat",
+          "crop": {
+            "width": 305.85366,
+            "height": 300.0,
+            "x": 0.47393,
+            "y": 99.52153
+          }
+        },
+        {
+          "id": "fr_7a6932abcb53",
+          "slug": "bague",
+          "subjectEnglish": "one simple gold ring",
+          "crop": {
+            "width": 305.85366,
+            "height": 300.0,
+            "x": 50.0,
+            "y": 99.52153
+          }
+        },
+        {
+          "id": "fr_732c7e793b7d",
+          "slug": "collier",
+          "subjectEnglish": "one necklace arranged in a loop",
+          "crop": {
+            "width": 305.85366,
+            "height": 300.0,
+            "x": 99.52607,
+            "y": 99.52153
+          }
+        }
+      ]
+    },
+    {
+      "id": "ville",
+      "fr": "En route",
+      "es": "Medios de transporte",
+      "color": "#d5e4ed",
+      "sheet": "images/photos/ville.webp",
+      "art": [
+        "voiture",
+        "bateau"
+      ],
+      "items": [
+        {
+          "id": "fr_1012c9a47e65",
+          "slug": "voiture",
+          "subjectEnglish": "one ordinary compact passenger car, three-quarter side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_60d6c4b5bc1e",
+          "slug": "velo",
+          "subjectEnglish": "one city bicycle, side view with both wheels visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_94efdd6f628e",
+          "slug": "train",
+          "subjectEnglish": "one passenger train with railway tracks visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_0292e6492fb5",
+          "slug": "avion",
+          "subjectEnglish": "one passenger airplane, side view with wings visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_8dc091bec6a6",
+          "slug": "bateau",
+          "subjectEnglish": "one small motorboat, complete hull visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_32c70cebf110",
+          "slug": "bus",
+          "subjectEnglish": "one city bus, side view with large windows",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_1f7f1c7a647c",
+          "slug": "moto",
+          "subjectEnglish": "one standard motorcycle, side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_9c17e003a3fa",
+          "slug": "tramway",
+          "subjectEnglish": "one modern tram on rails with overhead wire",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_097526e696e5",
+          "slug": "helicoptere",
+          "subjectEnglish": "one helicopter with rotor and landing skids clearly visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 99.52607
+          }
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "fr": "Dehors",
+      "es": "Naturaleza y tiempo",
+      "color": "#d4e6db",
+      "sheet": "images/photos/nature.webp",
+      "art": [
+        "soleil",
+        "montagne"
+      ],
+      "items": [
+        {
+          "id": "fr_45c8586a626d",
+          "slug": "soleil",
+          "subjectEnglish": "a bright golden sun in a clear blue sky, no moon",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 0.47393,
+            "y": 0.46512
+          }
+        },
+        {
+          "id": "fr_2f7d415329bf",
+          "slug": "lune",
+          "subjectEnglish": "a detailed full moon in a dark night sky, no sun",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 50.0,
+            "y": 0.46512
+          }
+        },
+        {
+          "id": "fr_0d359deb804f",
+          "slug": "arbre",
+          "subjectEnglish": "one full leafy tree, trunk and canopy visible",
+          "crop": {
+            "width": 305.85366,
+            "height": 318.27411,
+            "x": 99.52607,
+            "y": 0.46512
+          }
+        },
+        {
+          "id": "fr_71891a7c7c2e",
+          "slug": "fleur",
+          "subjectEnglish": "one red flower with green stem and leaves",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 0.47393,
+            "y": 47.59672
+          }
+        },
+        {
+          "id": "fr_49b916e84a62",
+          "slug": "montagne",
+          "subjectEnglish": "a prominent high mountain with rocky summit",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 50.0,
+            "y": 47.59672
+          }
+        },
+        {
+          "id": "fr_b0769d64b467",
+          "slug": "mer",
+          "subjectEnglish": "open blue sea with visible horizon and small waves",
+          "crop": {
+            "width": 305.85366,
+            "height": 312.7182,
+            "x": 99.52607,
+            "y": 47.59672
+          }
+        },
+        {
+          "id": "fr_622c995322e7",
+          "slug": "pluie",
+          "subjectEnglish": "visible rain falling onto a wet pavement, no snow",
+          "crop": {
+            "width": 305.85366,
+            "height": 288.27586,
+            "x": 0.47393,
+            "y": 99.5116
+          }
+        },
+        {
+          "id": "fr_533b942ad08f",
+          "slug": "neige",
+          "subjectEnglish": "a snowy landscape with snow covering the ground and falling flakes",
+          "crop": {
+            "width": 305.85366,
+            "height": 288.27586,
+            "x": 50.0,
+            "y": 99.5116
+          }
+        },
+        {
+          "id": "fr_434216db5cc8",
+          "slug": "cascade",
+          "subjectEnglish": "a waterfall flowing over rocks into a pool",
+          "crop": {
+            "width": 305.85366,
+            "height": 288.27586,
+            "x": 99.52607,
+            "y": 99.5116
+          }
+        }
+      ]
+    },
+    {
+      "id": "corps",
+      "fr": "Le corps",
+      "es": "El cuerpo",
+      "color": "#efd9cc",
+      "sheet": "images/photos/corps.webp",
+      "art": [
+        "tete",
+        "bouche"
+      ],
+      "items": [
+        {
+          "id": "fr_de499122087a",
+          "slug": "tete",
+          "subjectEnglish": "a neutral adult head in profile from the neck up, natural skin texture",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_b28b7af69320",
+          "slug": "main",
+          "subjectEnglish": "one open human hand showing palm and five fingers",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_ac5818831d03",
+          "slug": "oeil",
+          "subjectEnglish": "a close-up of one human eye and eyebrow",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 0.47393
+          }
+        },
+        {
+          "id": "fr_953bd24ca8ae",
+          "slug": "nez",
+          "subjectEnglish": "a close-up of a human nose centered with minimal surrounding face",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_1af1b12c5e22",
+          "slug": "bouche",
+          "subjectEnglish": "a close-up of a relaxed closed human mouth",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_9c3fdd470cac",
+          "slug": "oreille",
+          "subjectEnglish": "a close-up side view of one human ear",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 50.0
+          }
+        },
+        {
+          "id": "fr_17715247c284",
+          "slug": "pied",
+          "subjectEnglish": "one bare human foot in side view",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 0.47393,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_0311eeecdb50",
+          "slug": "bras",
+          "subjectEnglish": "one human arm from shoulder to wrist, neutral pose",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 50.0,
+            "y": 99.52607
+          }
+        },
+        {
+          "id": "fr_2951bfa018d9",
+          "slug": "genou",
+          "subjectEnglish": "a close-up of one bare human knee, slightly bent",
+          "crop": {
+            "width": 305.85366,
+            "height": 305.85366,
+            "x": 99.52607,
+            "y": 99.52607
+          }
+        }
+      ]
+    },
+    {
+      "id": "objets",
+      "fr": "Tous les jours",
+      "es": "Objetos cotidianos",
+      "color": "#dee2f0",
+      "sheet": "images/photos/objets.webp",
+      "art": [
+        "telephone",
+        "crayon"
+      ],
+      "items": [
+        {
+          "id": "fr_32e4ddf3be8c",
+          "slug": "telephone",
+          "subjectEnglish": "one modern smartphone with dark blank screen",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 0.47393,
+            "y": 0.46948
+          }
+        },
+        {
+          "id": "fr_98fed91b7f28",
+          "slug": "ordinateur",
+          "subjectEnglish": "one open laptop computer with blank screen",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 50.0,
+            "y": 0.46948
+          }
+        },
+        {
+          "id": "fr_ccb486060a4f",
+          "slug": "montre",
+          "subjectEnglish": "one wristwatch with simple round face and strap",
+          "crop": {
+            "width": 305.85366,
+            "height": 311.9403,
+            "x": 99.52607,
+            "y": 0.46948
+          }
+        },
+        {
+          "id": "fr_4c1be689e706",
+          "slug": "stylo",
+          "subjectEnglish": "one ballpoint pen with clip",
+          "crop": {
+            "width": 305.85366,
+            "height": 325.71429,
+            "x": 0.47393,
+            "y": 47.64097
+          }
+        },
+        {
+          "id": "fr_9be869cf4a4e",
+          "slug": "crayon",
+          "subjectEnglish": "one sharpened wooden pencil",
+          "crop": {
+            "width": 305.85366,
+            "height": 325.71429,
+            "x": 50.0,
+            "y": 47.64097
+          }
+        },
+        {
+          "id": "fr_c9904cff579a",
+          "slug": "livre",
+          "subjectEnglish": "one closed hardcover book, no visible writing",
+          "crop": {
+            "width": 305.85366,
+            "height": 325.71429,
+            "x": 99.52607,
+            "y": 47.64097
+          }
+        },
+        {
+          "id": "fr_fb910ef7d45d",
+          "slug": "cle",
+          "subjectEnglish": "one ordinary metal door key",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 0.47393,
+            "y": 99.50678
+          }
+        },
+        {
+          "id": "fr_05297834ce7e",
+          "slug": "sac",
+          "subjectEnglish": "one simple tote bag with two handles",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 50.0,
+            "y": 99.50678
+          }
+        },
+        {
+          "id": "fr_f5a9b571cc4e",
+          "slug": "valise",
+          "subjectEnglish": "one upright rectangular travel suitcase with handle and small wheels",
+          "crop": {
+            "width": 305.85366,
+            "height": 283.06998,
+            "x": 99.52607,
+            "y": 99.50678
+          }
+        }
+      ]
+    },
+    {
+      "id": "outils",
+      "fr": "Les outils",
+      "es": "Herramientas",
+      "color": "#e7e1d4",
+      "sheet": "images/photos/outils.webp",
+      "art": [
+        "marteau",
+        "clou"
+      ],
+      "items": [
+        {
+          "id": "fr_2c6d2540a70e",
+          "slug": "marteau",
+          "subjectEnglish": "one claw hammer with wooden handle",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 0.47393,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_aa6f46637ab3",
+          "slug": "tournevis",
+          "subjectEnglish": "one flat-head screwdriver",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 50.0,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_d979f730942f",
+          "slug": "pince",
+          "subjectEnglish": "one pair of combination pliers",
+          "crop": {
+            "width": 305.85366,
+            "height": 308.10811,
+            "x": 99.52607,
+            "y": 0.47226
+          }
+        },
+        {
+          "id": "fr_675c84dc9067",
+          "slug": "vis",
+          "subjectEnglish": "one metal screw with threaded shaft",
+          "crop": {
+            "width": 305.85366,
+            "height": 326.5625,
+            "x": 0.47393,
+            "y": 48.16092
+          }
+        },
+        {
+          "id": "fr_487e1623e92a",
+          "slug": "clou",
+          "subjectEnglish": "one straight metal nail with flat head",
+          "crop": {
+            "width": 305.85366,
+            "height": 326.5625,
+            "x": 50.0,
+            "y": 48.16092
+          }
+        },
+        {
+          "id": "fr_ea60dc8dbb6e",
+          "slug": "perceuse",
+          "subjectEnglish": "one handheld electric drill",
+          "crop": {
+            "width": 305.85366,
+            "height": 326.5625,
+            "x": 99.52607,
+            "y": 48.16092
+          }
+        },
+        {
+          "id": "fr_f55797daf951",
+          "slug": "scie",
+          "subjectEnglish": "one hand saw with serrated blade and handle",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.6492,
+            "x": 0.47393,
+            "y": 99.5092
+          }
+        },
+        {
+          "id": "fr_b6f8470d9cee",
+          "slug": "echelle",
+          "subjectEnglish": "one straight ladder with several rungs",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.6492,
+            "x": 50.0,
+            "y": 99.5092
+          }
+        },
+        {
+          "id": "fr_980873d1132b",
+          "slug": "pinceau",
+          "subjectEnglish": "one paintbrush with wooden handle and flat bristles",
+          "crop": {
+            "width": 305.85366,
+            "height": 285.6492,
+            "x": 99.52607,
+            "y": 99.5092
+          }
+        }
+      ]
+    }
+  ]
+}

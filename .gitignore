@@ -1,0 +1,28 @@
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Dependencias, registros y archivos temporales
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+
+# Configuración local, credenciales y exportaciones personales
+.env
+.env.*
+!.env.example
+.openai/
+work/
+auditoria/
+vistas/
+snapshots/
+atelier-progreso-*.json

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180" role="img" aria-labelledby="title"><title id="title">livre</title><defs>
+<linearGradient id="red" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f77d60"/><stop offset="1" stop-color="#cc413d"/></linearGradient>
+<linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe19a"/><stop offset="1" stop-color="#eeb950"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4c776"/><stop offset="1" stop-color="#5c9367"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fc5d1"/><stop offset="1" stop-color="#44869e"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfb37f"/><stop offset="1" stop-color="#b97e4f"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ceaa"/><stop offset="1" stop-color="#e2a982"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8dcc7"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e9e8"/><stop offset="1" stop-color="#aab9be"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb852"/><stop offset="1" stop-color="#ed812e"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b59fc5"/><stop offset="1" stop-color="#82668f"/></linearGradient>
+</defs><ellipse cx="100" cy="164" rx="57" ry="7" fill="#535a47" opacity=".09"/><g stroke="#38474b" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m44 36 94-12 22 16v109l-98 15-18-16Z" fill="#4c8796"/><path d="m55 43 86-11 11 9-90 13Z" fill="#faf0db"/><path d="m62 54 98-14v109l-98 15Z" fill="url(#blue)"/><path d="M44 36v112l18 16V54Z" fill="#32687d"/><path d="m78 80 61-9m-61 20 49-7m-49 48 61-9" fill="none" stroke="#c3e0dc" stroke-width="4"/><path d="m131 32-3 25-9-4-7 7V35" fill="#df775b"/><path d="m48 145 11 10" stroke="#214e66"/></g></svg>

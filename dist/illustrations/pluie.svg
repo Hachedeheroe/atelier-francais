@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="180" viewBox="0 0 200 180" role="img" aria-labelledby="title"><title id="title">pluie</title><defs>
+<linearGradient id="red" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f77d60"/><stop offset="1" stop-color="#cc413d"/></linearGradient>
+<linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe19a"/><stop offset="1" stop-color="#eeb950"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a4c776"/><stop offset="1" stop-color="#5c9367"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8fc5d1"/><stop offset="1" stop-color="#44869e"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfb37f"/><stop offset="1" stop-color="#b97e4f"/></linearGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ceaa"/><stop offset="1" stop-color="#e2a982"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8dcc7"/></linearGradient>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4e9e8"/><stop offset="1" stop-color="#aab9be"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb852"/><stop offset="1" stop-color="#ed812e"/></linearGradient>
+<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b59fc5"/><stop offset="1" stop-color="#82668f"/></linearGradient>
+</defs><ellipse cx="100" cy="164" rx="57" ry="7" fill="#535a47" opacity=".09"/><g stroke="#38474b" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M47 92c-30-6-27-44 1-46 5-31 48-39 63-10 27-12 55 5 53 29 25 17 10 44-15 40H53Z" fill="url(#silver)"/><path d="M52 50q7-12 20-13" fill="none" stroke="#f2f4ed" stroke-width="5"/><g stroke="#72aebb" stroke-width="5"><path d="m49 119-9 18m45-18-9 18m45-18-9 18m45-18-9 18m-82 8-7 14m44-14-7 14m44-14-7 14"/></g></g></svg>

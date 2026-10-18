@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "title": "Mission Verbes",
+    "verbs": 18,
+    "stops": 6,
+    "imageMethod": "Escenas fotorrealistas generadas con IA; textos y audios originales de Frances_Anki_A0_C2.",
+    "tense": "Indicatif — présent"
+  },
+  "items": [
+    {
+      "id": "mission_manger",
+      "sourceId": "fr_707a62b12254",
+      "sourceSection": "vocabulary",
+      "verb": "manger",
+      "translation": "comer",
+      "phrase": "Je mange une pomme.",
+      "phraseTranslation": "Como una manzana.",
+      "audio": "audio/frn_a2ccff9eab6957b58915.mp3",
+      "location": "cafe",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " une pomme.",
+      "answerBody": "mange",
+      "answerBodies": [
+        "mange"
+      ],
+      "presentBodies": [
+        "mange",
+        "manges",
+        "mangeons",
+        "mangez",
+        "mangent"
+      ],
+      "presentForms": [
+        "je mange",
+        "tu manges",
+        "il mange / elle mange / on mange",
+        "nous mangeons",
+        "vous mangez",
+        "ils mangent / elles mangent"
+      ],
+      "tokens": [
+        "Je",
+        "mange",
+        "une",
+        "pomme."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 305.85366,
+        "height": 305.85366,
+        "x": 0.23697,
+        "y": 0.23697
+      }
+    },
+    {
+      "id": "mission_boire",
+      "sourceId": "fr_6a3aec982109",
+      "sourceSection": "vocabulary",
+      "verb": "boire",
+      "translation": "beber",
+      "phrase": "Je bois de l'eau.",
+      "phraseTranslation": "Bebo agua.",
+      "audio": "audio/frn_ba5e18c647a14942e293.mp3",
+      "location": "cafe",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " de l'eau.",
+      "answerBody": "bois",
+      "answerBodies": [
+        "bois"
+      ],
+      "presentBodies": [
+        "bois",
+        "boit",
+        "buvons",
+        "buvez",
+        "boivent"
+      ],
+      "presentForms": [
+        "je bois",
+        "tu bois",
+        "il boit / elle boit / on boit",
+        "nous buvons",
+        "vous buvez",
+        "ils boivent / elles boivent"
+      ],
+      "tokens": [
+        "Je",
+        "bois",
+        "de",
+        "l'eau."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 307.35294,
+        "height": 305.85366,
+        "x": 50.0,
+        "y": 0.23697
+      }
+    },
+    {
+      "id": "mission_lire",
+      "sourceId": "fr_64be944d6e0c",
+      "sourceSection": "vocabulary",
+      "verb": "lire",
+      "translation": "leer",
+      "phrase": "Je lis un livre.",
+      "phraseTranslation": "Leo un libro.",
+      "audio": "audio/frn_56bc8edc1121c1ccd02f.mp3",
+      "location": "gare",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " un livre.",
+      "answerBody": "lis",
+      "answerBodies": [
+        "lis"
+      ],
+      "presentBodies": [
+        "lis",
+        "lit",
+        "lisons",
+        "lisez",
+        "lisent"
+      ],
+      "presentForms": [
+        "je lis",
+        "tu lis",
+        "il lit / elle lit / on lit",
+        "nous lisons",
+        "vous lisez",
+        "ils lisent / elles lisent"
+      ],
+      "tokens": [
+        "Je",
+        "lis",
+        "un",
+        "livre."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 306.60147,
+        "height": 305.85366,
+        "x": 99.76331,
+        "y": 0.23697
+      }
+    },
+    {
+      "id": "mission_ecrire",
+      "sourceId": "fr_ee40af5a7c59",
+      "sourceSection": "vocabulary",
+      "verb": "écrire",
+      "translation": "escribir",
+      "phrase": "J'écris une phrase.",
+      "phraseTranslation": "Escribo una frase.",
+      "audio": "audio/frn_ae3ec48c980560d0cbe4.mp3",
+      "location": "atelier",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "J'",
+      "gapSuffix": " une phrase.",
+      "answerBody": "écris",
+      "answerBodies": [
+        "écris"
+      ],
+      "presentBodies": [
+        "écris",
+        "écrit",
+        "écrivons",
+        "écrivez",
+        "écrivent"
+      ],
+      "presentForms": [
+        "j'écris",
+        "tu écris",
+        "il écrit / elle écrit / on écrit",
+        "nous écrivons",
+        "vous écrivez",
+        "ils écrivent / elles écrivent"
+      ],
+      "tokens": [
+        "J'écris",
+        "une",
+        "phrase."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 305.85366,
+        "height": 314.28571,
+        "x": 0.23697,
+        "y": 49.23977
+      }
+    },
+    {
+      "id": "mission_dormir",
+      "sourceId": "fr_fc5ed9f5c6ff",
+      "sourceSection": "vocabulary",
+      "verb": "dormir",
+      "translation": "dormir",
+      "phrase": "Je dors bien.",
+      "phraseTranslation": "Duermo bien.",
+      "audio": "audio/frn_d59c1114f71afd564175.mp3",
+      "location": "maison",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " bien.",
+      "answerBody": "dors",
+      "answerBodies": [
+        "dors"
+      ],
+      "presentBodies": [
+        "dors",
+        "dort",
+        "dormons",
+        "dormez",
+        "dorment"
+      ],
+      "presentForms": [
+        "je dors",
+        "tu dors",
+        "il dort / elle dort / on dort",
+        "nous dormons",
+        "vous dormez",
+        "ils dorment / elles dorment"
+      ],
+      "tokens": [
+        "Je",
+        "dors",
+        "bien."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 307.35294,
+        "height": 314.28571,
+        "x": 50.0,
+        "y": 49.23977
+      }
+    },
+    {
+      "id": "mission_courir",
+      "sourceId": "fr_001b7ca0799d",
+      "sourceSection": "vocabulary",
+      "verb": "courir",
+      "translation": "correr",
+      "phrase": "Je cours dans le parc.",
+      "phraseTranslation": "Corro por el parque.",
+      "audio": "audio/frn_c7f646d5aac4ad03a5f4.mp3",
+      "location": "parc",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " dans le parc.",
+      "answerBody": "cours",
+      "answerBodies": [
+        "cours"
+      ],
+      "presentBodies": [
+        "cours",
+        "court",
+        "courons",
+        "courez",
+        "courent"
+      ],
+      "presentForms": [
+        "je cours",
+        "tu cours",
+        "il court / elle court / on court",
+        "nous courons",
+        "vous courez",
+        "ils courent / elles courent"
+      ],
+      "tokens": [
+        "Je",
+        "cours",
+        "dans",
+        "le",
+        "parc."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 306.60147,
+        "height": 314.28571,
+        "x": 99.76331,
+        "y": 49.23977
+      }
+    },
+    {
+      "id": "mission_nager",
+      "sourceId": "fr_7febd5a4b35b",
+      "sourceSection": "vocabulary",
+      "verb": "nager",
+      "translation": "nadar",
+      "phrase": "Je nage à la piscine.",
+      "phraseTranslation": "Nado en la piscina.",
+      "audio": "audio/frn_7571988622214e158d55.mp3",
+      "location": "parc",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " à la piscine.",
+      "answerBody": "nage",
+      "answerBodies": [
+        "nage"
+      ],
+      "presentBodies": [
+        "nage",
+        "nages",
+        "nageons",
+        "nagez",
+        "nagent"
+      ],
+      "presentForms": [
+        "je nage",
+        "tu nages",
+        "il nage / elle nage / on nage",
+        "nous nageons",
+        "vous nagez",
+        "ils nagent / elles nagent"
+      ],
+      "tokens": [
+        "Je",
+        "nage",
+        "à",
+        "la",
+        "piscine."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 305.85366,
+        "height": 297.1564,
+        "x": 0.23697,
+        "y": 99.75962
+      }
+    },
+    {
+      "id": "mission_preparer",
+      "sourceId": "fr_da84cbf337c1",
+      "sourceSection": "vocabulary",
+      "verb": "préparer",
+      "translation": "preparar",
+      "phrase": "Je prépare le repas.",
+      "phraseTranslation": "Preparo la comida.",
+      "audio": "audio/frn_2f3a647601fac40f5427.mp3",
+      "location": "marche",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " le repas.",
+      "answerBody": "prépare",
+      "answerBodies": [
+        "prépare"
+      ],
+      "presentBodies": [
+        "prépare",
+        "prépares",
+        "préparons",
+        "préparez",
+        "préparent"
+      ],
+      "presentForms": [
+        "je prépare",
+        "tu prépares",
+        "il prépare / elle prépare / on prépare",
+        "nous préparons",
+        "vous préparez",
+        "ils préparent / elles préparent"
+      ],
+      "tokens": [
+        "Je",
+        "prépare",
+        "le",
+        "repas."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 307.35294,
+        "height": 297.1564,
+        "x": 50.0,
+        "y": 99.75962
+      }
+    },
+    {
+      "id": "mission_danser",
+      "sourceId": "fr_8b03b1b6c634",
+      "sourceSection": "vocabulary",
+      "verb": "danser",
+      "translation": "bailar",
+      "phrase": "Nous dansons ensemble.",
+      "phraseTranslation": "Bailamos juntos.",
+      "audio": "audio/frn_40ffe87acd1ac71cf4e9.mp3",
+      "location": "marche",
+      "tense": "Indicatif — présent",
+      "personIndex": 3,
+      "person": "nous",
+      "gapPrefix": "Nous ",
+      "gapSuffix": " ensemble.",
+      "answerBody": "dansons",
+      "answerBodies": [
+        "dansons"
+      ],
+      "presentBodies": [
+        "danse",
+        "danses",
+        "dansons",
+        "dansez",
+        "dansent"
+      ],
+      "presentForms": [
+        "je danse",
+        "tu danses",
+        "il danse / elle danse / on danse",
+        "nous dansons",
+        "vous dansez",
+        "ils dansent / elles dansent"
+      ],
+      "tokens": [
+        "Nous",
+        "dansons",
+        "ensemble."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-1.webp",
+        "width": 306.60147,
+        "height": 297.1564,
+        "x": 99.76331,
+        "y": 99.75962
+      }
+    },
+    {
+      "id": "mission_ecouter",
+      "sourceId": "fr_447027217a9f",
+      "sourceSection": "vocabulary",
+      "verb": "écouter",
+      "translation": "escuchar",
+      "phrase": "J'écoute un dialogue.",
+      "phraseTranslation": "Escucho un diálogo.",
+      "audio": "audio/frn_abc6328f3153deb236ee.mp3",
+      "location": "atelier",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "J'",
+      "gapSuffix": " un dialogue.",
+      "answerBody": "écoute",
+      "answerBodies": [
+        "écoute"
+      ],
+      "presentBodies": [
+        "écoute",
+        "écoutes",
+        "écoutons",
+        "écoutez",
+        "écoutent"
+      ],
+      "presentForms": [
+        "j'écoute",
+        "tu écoutes",
+        "il écoute / elle écoute / on écoute",
+        "nous écoutons",
+        "vous écoutez",
+        "ils écoutent / elles écoutent"
+      ],
+      "tokens": [
+        "J'écoute",
+        "un",
+        "dialogue."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 312.7182,
+        "x": 0.23697,
+        "y": 0.23447
+      }
+    },
+    {
+      "id": "mission_parler",
+      "sourceId": "fr_c1c0b23407c5",
+      "sourceSection": "vocabulary",
+      "verb": "parler",
+      "translation": "hablar",
+      "phrase": "Je parle espagnol.",
+      "phraseTranslation": "Hablo español.",
+      "audio": "audio/frn_45a4b62bf69b88f4ca23.mp3",
+      "location": "cafe",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " espagnol.",
+      "answerBody": "parle",
+      "answerBodies": [
+        "parle"
+      ],
+      "presentBodies": [
+        "parle",
+        "parles",
+        "parlons",
+        "parlez",
+        "parlent"
+      ],
+      "presentForms": [
+        "je parle",
+        "tu parles",
+        "il parle / elle parle / on parle",
+        "nous parlons",
+        "vous parlez",
+        "ils parlent / elles parlent"
+      ],
+      "tokens": [
+        "Je",
+        "parle",
+        "espagnol."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 312.7182,
+        "x": 50.0,
+        "y": 0.23447
+      }
+    },
+    {
+      "id": "mission_regarder",
+      "sourceId": "fr_25320ba0ec68",
+      "sourceSection": "vocabulary",
+      "verb": "regarder",
+      "translation": "mirar",
+      "phrase": "Je regarde une vidéo.",
+      "phraseTranslation": "Miro un vídeo.",
+      "audio": "audio/frn_8dd348d514fb50141c16.mp3",
+      "location": "atelier",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " une vidéo.",
+      "answerBody": "regarde",
+      "answerBodies": [
+        "regarde"
+      ],
+      "presentBodies": [
+        "regarde",
+        "regardes",
+        "regardons",
+        "regardez",
+        "regardent"
+      ],
+      "presentForms": [
+        "je regarde",
+        "tu regardes",
+        "il regarde / elle regarde / on regarde",
+        "nous regardons",
+        "vous regardez",
+        "ils regardent / elles regardent"
+      ],
+      "tokens": [
+        "Je",
+        "regarde",
+        "une",
+        "vidéo."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 304.36893,
+        "height": 312.7182,
+        "x": 99.76247,
+        "y": 0.23447
+      }
+    },
+    {
+      "id": "mission_acheter",
+      "sourceId": "fr_beb2029cbbb5",
+      "sourceSection": "vocabulary",
+      "verb": "acheter",
+      "translation": "comprar",
+      "phrase": "J'achète du pain.",
+      "phraseTranslation": "Compro pan.",
+      "audio": "audio/frn_dd8f288cdb799d802b08.mp3",
+      "location": "marche",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "J'",
+      "gapSuffix": " du pain.",
+      "answerBody": "achète",
+      "answerBodies": [
+        "achète"
+      ],
+      "presentBodies": [
+        "achète",
+        "achètes",
+        "achetons",
+        "achetez",
+        "achètent"
+      ],
+      "presentForms": [
+        "j'achète",
+        "tu achètes",
+        "il achète / elle achète / on achète",
+        "nous achetons",
+        "vous achetez",
+        "ils achètent / elles achètent"
+      ],
+      "tokens": [
+        "J'achète",
+        "du",
+        "pain."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 324.03101,
+        "x": 0.23697,
+        "y": 47.40484
+      }
+    },
+    {
+      "id": "mission_ouvrir",
+      "sourceId": "fr_a52ede37569b",
+      "sourceSection": "vocabulary",
+      "verb": "ouvrir",
+      "translation": "abrir",
+      "phrase": "J'ouvre la fenêtre.",
+      "phraseTranslation": "Abro la ventana.",
+      "audio": "audio/frn_ce5337199c659d551fc6.mp3",
+      "location": "maison",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "J'",
+      "gapSuffix": " la fenêtre.",
+      "answerBody": "ouvre",
+      "answerBodies": [
+        "ouvre"
+      ],
+      "presentBodies": [
+        "ouvre",
+        "ouvres",
+        "ouvrons",
+        "ouvrez",
+        "ouvrent"
+      ],
+      "presentForms": [
+        "j'ouvre",
+        "tu ouvres",
+        "il ouvre / elle ouvre / on ouvre",
+        "nous ouvrons",
+        "vous ouvrez",
+        "ils ouvrent / elles ouvrent"
+      ],
+      "tokens": [
+        "J'ouvre",
+        "la",
+        "fenêtre."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 324.03101,
+        "x": 50.0,
+        "y": 47.40484
+      }
+    },
+    {
+      "id": "mission_fermer",
+      "sourceId": "fr_736a22d1cc1b",
+      "sourceSection": "vocabulary",
+      "verb": "fermer",
+      "translation": "cerrar",
+      "phrase": "Je ferme la porte.",
+      "phraseTranslation": "Cierro la puerta.",
+      "audio": "audio/frn_7a1ee74a9cd995c1d605.mp3",
+      "location": "maison",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " la porte.",
+      "answerBody": "ferme",
+      "answerBodies": [
+        "ferme"
+      ],
+      "presentBodies": [
+        "ferme",
+        "fermes",
+        "fermons",
+        "fermez",
+        "ferment"
+      ],
+      "presentForms": [
+        "je ferme",
+        "tu fermes",
+        "il ferme / elle ferme / on ferme",
+        "nous fermons",
+        "vous fermez",
+        "ils ferment / elles ferment"
+      ],
+      "tokens": [
+        "Je",
+        "ferme",
+        "la",
+        "porte."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 304.36893,
+        "height": 324.03101,
+        "x": 99.76247,
+        "y": 47.40484
+      }
+    },
+    {
+      "id": "mission_prendre",
+      "sourceId": "fr_f5cf5e12c1ad",
+      "sourceSection": "vocabulary",
+      "verb": "prendre",
+      "translation": "tomar; coger",
+      "phrase": "Je prends le train.",
+      "phraseTranslation": "Cojo el tren.",
+      "audio": "audio/frn_100bf397f305e0369b4b.mp3",
+      "location": "gare",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " le train.",
+      "answerBody": "prends",
+      "answerBodies": [
+        "prends"
+      ],
+      "presentBodies": [
+        "prends",
+        "prend",
+        "prenons",
+        "prenez",
+        "prennent"
+      ],
+      "presentForms": [
+        "je prends",
+        "tu prends",
+        "il prend / elle prend / on prend",
+        "nous prenons",
+        "vous prenez",
+        "ils prennent / elles prennent"
+      ],
+      "tokens": [
+        "Je",
+        "prends",
+        "le",
+        "train."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 281.79775,
+        "x": 0.23697,
+        "y": 99.75278
+      }
+    },
+    {
+      "id": "mission_aller",
+      "sourceId": "fr_3f7a5e618586",
+      "sourceSection": "vocabulary",
+      "verb": "aller",
+      "translation": "ir",
+      "phrase": "Je vais à la gare.",
+      "phraseTranslation": "Voy a la estación.",
+      "audio": "audio/frn_e387d89e8812385cea71.mp3",
+      "location": "gare",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " à la gare.",
+      "answerBody": "vais",
+      "answerBodies": [
+        "vais"
+      ],
+      "presentBodies": [
+        "vais",
+        "vas",
+        "va",
+        "allons",
+        "allez",
+        "vont"
+      ],
+      "presentForms": [
+        "je vais",
+        "tu vas",
+        "il va / elle va / on va",
+        "nous allons",
+        "vous allez",
+        "ils vont / elles vont"
+      ],
+      "tokens": [
+        "Je",
+        "vais",
+        "à",
+        "la",
+        "gare."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 305.85366,
+        "height": 281.79775,
+        "x": 50.0,
+        "y": 99.75278
+      }
+    },
+    {
+      "id": "mission_jouer",
+      "sourceId": "fr_54e6c1ed69cc",
+      "sourceSection": "vocabulary",
+      "verb": "jouer",
+      "translation": "jugar; tocar (instrumento)",
+      "phrase": "Je joue au football.",
+      "phraseTranslation": "Juego al fútbol.",
+      "audio": "audio/frn_cc77579d9b5757022f31.mp3",
+      "location": "parc",
+      "tense": "Indicatif — présent",
+      "personIndex": 0,
+      "person": "je",
+      "gapPrefix": "Je ",
+      "gapSuffix": " au football.",
+      "answerBody": "joue",
+      "answerBodies": [
+        "joue"
+      ],
+      "presentBodies": [
+        "joue",
+        "joues",
+        "jouons",
+        "jouez",
+        "jouent"
+      ],
+      "presentForms": [
+        "je joue",
+        "tu joues",
+        "il joue / elle joue / on joue",
+        "nous jouons",
+        "vous jouez",
+        "ils jouent / elles jouent"
+      ],
+      "tokens": [
+        "Je",
+        "joue",
+        "au",
+        "football."
+      ],
+      "photo": {
+        "src": "images/verbs/actions-2.webp",
+        "width": 304.36893,
+        "height": 281.79775,
+        "x": 99.76247,
+        "y": 99.75278
+      }
+    }
+  ]
+}

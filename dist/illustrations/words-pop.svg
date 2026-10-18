@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350" role="img" aria-labelledby="title desc">
+  <title id="title">Les mots prennent vie</title>
+  <desc id="desc">Une pomme, une fleur et un livre forment un petit dictionnaire illustré.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#18234b" flood-opacity=".13"/></filter>
+  </defs>
+  <ellipse cx="246" cy="179" rx="174" ry="137" fill="#d7eee3"/>
+  <circle cx="367" cy="116" r="81" fill="#e6ddff"/>
+  <path d="m66 222 9-19 9 19 20 9-20 9-9 20-9-20-19-9Z" fill="#f4c951"/>
+  <path d="m416 248 7-15 7 15 16 7-16 7-7 16-7-16-15-7Z" fill="#ef6b54"/>
+  <circle cx="242" cy="49" r="6" fill="#3455db"/>
+  <circle cx="450" cy="172" r="4" fill="#18234b"/>
+  <g transform="rotate(-12 151 133)" filter="url(#shadow)" stroke="#18234b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M152 95c-23-23-68-9-68 32 0 35 26 65 48 59 13-4 18-4 31 0 26 7 51-25 51-61 0-39-39-53-62-30Z" fill="#ef6b54"/>
+    <path d="M152 96q-5-22 9-42" fill="none" stroke-width="6"/>
+    <path d="M157 68q20-28 45-13-14 25-41 21" fill="#5a9a7d"/>
+    <path d="M111 113q-13 13-12 28" fill="none" stroke="#ffb8a1" stroke-width="7"/>
+    <path d="M143 170q8 5 17 0" fill="none" stroke="#d64d43"/>
+  </g>
+  <g transform="rotate(10 360 143)" stroke="#18234b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M360 134v85" fill="none" stroke="#508e73" stroke-width="8"/>
+    <path d="M360 192q-39-1-43-33 36 1 43 33m1 15q39-2 44-33-36 0-44 33" fill="#7eb397"/>
+    <g filter="url(#shadow)">
+      <path d="M360 83c-24-35-52-9-35 17-40-6-47 33-13 43-28 26 0 56 27 35 1 38 42 38 43 0 30 21 55-12 25-36 35-10 25-49-14-42 18-27-10-52-33-17Z" fill="#f4c951"/>
+      <circle cx="360" cy="132" r="25" fill="#ef6b54"/>
+      <path d="M349 126q7-9 15-6" fill="none" stroke="#ffc7a8" stroke-width="5"/>
+    </g>
+  </g>
+  <g transform="rotate(8 236 254)" filter="url(#shadow)" stroke="#18234b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m132 207 165-18 28 21v105l-163 19-30-23Z" fill="#3455db"/>
+    <path d="m142 208 154-17 20 15-154 18Z" fill="#fffcf5"/>
+    <path d="m162 224 163-18v109l-163 19Z" fill="#3455db"/>
+    <path d="M132 207v104l30 23V224Z" fill="#213baf"/>
+    <path d="m182 248 117-13m-117 30 82-9" stroke="#b9c7ff" stroke-width="5"/>
+    <path d="m276 192-1 47-12-8-12 11v-47" fill="#ef6b54"/>
+    <circle cx="287" cy="291" r="15" fill="#f4c951" stroke="none"/>
+    <path d="m280 291 5 5 10-10" fill="none" stroke-width="3"/>
+  </g>
+  <g transform="rotate(-8 89 72)" filter="url(#shadow)">
+    <rect x="57" y="43" width="64" height="51" rx="15" fill="#fffcf5" stroke="#18234b" stroke-width="2"/>
+    <text x="89" y="79" fill="#18234b" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">la</text>
+  </g>
+  <g transform="rotate(10 361 279)" filter="url(#shadow)">
+    <rect x="329" y="250" width="64" height="51" rx="15" fill="#fffcf5" stroke="#18234b" stroke-width="2"/>
+    <text x="361" y="286" fill="#18234b" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">le</text>
+  </g>
+  <path d="M231 106q24-22 52-4m-1 0-4-13m4 13-14-1" fill="none" stroke="#18234b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
