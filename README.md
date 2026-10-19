@@ -40,6 +40,14 @@ Las láminas permiten explorar, escuchar, elegir una imagen y practicar en voz a
 
 Las rondas ofrecen pistas y una segunda vuelta para las respuestas pendientes. El pasaporte incorpora puntos de experiencia, estrellas, rachas, insignias y misiones diarias. Los niveles del juego indican progreso en la web y no certifican un nivel MCER.
 
+## Trucos de verbos y conjugaciones
+
+**Trucos de conjugación** ofrece ocho patrones visuales para el presente (-er, el modelo finir, el modelo vendre e irregulares), imparfait, futur simple, conditionnel présent y passé composé. Incluye excepciones y concordancia de género y número. Las 18 fichas de verbos frecuentes reutilizan ejemplos y audios del material.
+
+El laboratorio permite elegir entre las 566 tablas y cinco tiempos; las seis personas permanecen ocultas hasta pedir el modelo. Las raíces y las terminaciones se distinguen por colores cuando la segmentación es fiable. La guía enlaza con la práctica del tren, que conserva sus cuatro tiempos. Las fuentes primarias de OQLF y Académie française se enlazan por regla.
+
+En **Misión verbos** y **Tren de los verbos**, «Ver un truco» ofrece una orientación antes de «Ver modelo». Pedir cualquiera de las ayudas marca la respuesta para repasar y evita contarla como recuerdo sin ayuda. Los retos de escucha mantienen ocultos el verbo y la frase hasta pedir el modelo o responder.
+
 ## Tu progreso y tu voz
 
 El progreso se guarda en el almacenamiento local del navegador. No se sincroniza con una cuenta ni con GitHub, y cambia según el navegador y la dirección desde la que abras la web. En **Mi progreso → Exportar / Importar** puedes guardar una copia o trasladarlo entre la versión local y la alojada. No subas esos archivos personales al repositorio.

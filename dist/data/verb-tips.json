@@ -1,0 +1,1431 @@
+{
+  "version": 1,
+  "locale": "es",
+  "title": "El déclic de los verbos",
+  "intro": "Descubre el patrón, tapa el modelo y úsalo en una frase tuya. Los trucos ayudan a recordar; las tablas muestran las formas completas.",
+  "verifiedOn": "2026-10-19",
+  "sourcePolicy": "Explicaciones redactadas para esta web y verificadas con OQLF y Académie française. Conjugaciones, frases y referencias de audio copiadas del corpus local existente.",
+  "persons": [
+    "je",
+    "tu",
+    "il / elle / on",
+    "nous",
+    "vous",
+    "ils / elles"
+  ],
+  "cards": [
+    {
+      "id": "present-er",
+      "title": "El ritmo de los -er",
+      "subtitle": "Presente · modelo parler",
+      "rule": "En los verbos regulares en -er, retira -er y añade e, es, e, ons, ez, ent.",
+      "memoryTip": "Recita dos bloques: «e, es, e» y «ons, ez, ent». Después escribe una forma sin mirar.",
+      "formula": [
+        "parl- + e / es / e / ons / ez / ent"
+      ],
+      "pitfalls": [
+        "Aller termina en -er, pero es irregular: je vais.",
+        "Conserva los ajustes de escritura de cada verbo: nous mangeons, nous commençons; acheter → j’achète."
+      ],
+      "examples": [
+        {
+          "verb": "parler",
+          "tense": "Indicatif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je parle",
+            "tu parles",
+            "il parle / elle parle / on parle",
+            "nous parlons",
+            "vous parlez",
+            "ils parlent / elles parlent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — présent"
+        }
+      ],
+      "sourceIds": [
+        "present",
+        "regular",
+        "er"
+      ],
+      "practiceVerbs": [
+        "parler",
+        "aimer",
+        "écouter",
+        "manger",
+        "commencer",
+        "acheter"
+      ]
+    },
+    {
+      "id": "present-finir",
+      "title": "La señal -issons",
+      "subtitle": "Presente · modelo finir",
+      "rule": "Finir y los verbos que siguen su modelo forman is, is, it, issons, issez, issent al quitar -ir.",
+      "memoryTip": "Busca la señal «nous finissons». La familia hace crecer -iss- en el plural.",
+      "formula": [
+        "fin- + is / is / it / issons / issez / issent"
+      ],
+      "pitfalls": [
+        "No todos los verbos en -ir siguen este modelo: dormir → nous dormons; partir → nous partons; ouvrir → j’ouvre."
+      ],
+      "examples": [
+        {
+          "verb": "finir",
+          "tense": "Indicatif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je finis",
+            "tu finis",
+            "il finit / elle finit / on finit",
+            "nous finissons",
+            "vous finissez",
+            "ils finissent / elles finissent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — présent"
+        }
+      ],
+      "sourceIds": [
+        "ir",
+        "present",
+        "regular"
+      ],
+      "practiceVerbs": [
+        "finir",
+        "choisir",
+        "réussir",
+        "grandir"
+      ]
+    },
+    {
+      "id": "present-vendre",
+      "title": "El modelo vendre",
+      "subtitle": "Presente · una familia concreta",
+      "rule": "En vendre, la base vend- recibe s, s, ninguna letra, ons, ez, ent.",
+      "memoryTip": "En «il vend», la d ya está en la base: no añadas una t.",
+      "formula": [
+        "vend- + s / s / ∅ / ons / ez / ent"
+      ],
+      "pitfalls": [
+        "Es un modelo concreto, no una regla para todos los -re. Prendre cambia: nous prenons, ils prennent; écrire: nous écrivons."
+      ],
+      "examples": [
+        {
+          "verb": "vendre",
+          "tense": "Indicatif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je vends",
+            "tu vends",
+            "il vend / elle vend / on vend",
+            "nous vendons",
+            "vous vendez",
+            "ils vendent / elles vendent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — présent"
+        }
+      ],
+      "sourceIds": [
+        "vendre",
+        "irregular"
+      ],
+      "practiceVerbs": [
+        "vendre",
+        "attendre",
+        "répondre",
+        "perdre"
+      ]
+    },
+    {
+      "id": "present-anchors",
+      "title": "Tres anclas para los irregulares",
+      "subtitle": "Presente · je, nous, ils",
+      "rule": "Aprende juntas las formas de je, nous e ils para detectar los cambios de raíz.",
+      "memoryTip": "Imagina tres estaciones: «je prends → nous prenons → ils prennent». Completa las otras personas y comprueba las seis.",
+      "formula": [
+        "je → nous → ils → comprobar las 6 personas"
+      ],
+      "pitfalls": [
+        "Es una estrategia de memoria, no una regla de formación universal.",
+        "Comprueba vous aparte: vous faites y vous dites. Être, avoir y aller necesitan sus seis formas."
+      ],
+      "examples": [
+        {
+          "verb": "prendre",
+          "tense": "Indicatif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je prends",
+            "tu prends",
+            "il prend / elle prend / on prend",
+            "nous prenons",
+            "vous prenez",
+            "ils prennent / elles prennent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — présent"
+        },
+        {
+          "verb": "faire",
+          "tense": "Indicatif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je fais",
+            "tu fais",
+            "il fait / elle fait / on fait",
+            "nous faisons",
+            "vous faites",
+            "ils font / elles font"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — présent"
+        }
+      ],
+      "sourceIds": [
+        "present",
+        "irregular"
+      ],
+      "practiceVerbs": [
+        "être",
+        "avoir",
+        "aller",
+        "faire",
+        "prendre",
+        "venir",
+        "pouvoir",
+        "vouloir",
+        "savoir",
+        "voir",
+        "mettre",
+        "dire",
+        "lire",
+        "écrire",
+        "boire",
+        "courir",
+        "dormir"
+      ]
+    },
+    {
+      "id": "imparfait",
+      "title": "Nous abre la puerta del pasado",
+      "subtitle": "Imparfait · una raíz y seis finales",
+      "rule": "Parte de nous en presente, quita -ons y añade ais, ais, ait, ions, iez, aient. Être usa ét-.",
+      "memoryTip": "«Nous faisons» te da fais-: je faisais. Usa nous como llave antes de añadir la terminación.",
+      "formula": [
+        "nous faisons → fais- + ais / ais / ait / ions / iez / aient",
+        "être → ét-"
+      ],
+      "pitfalls": [
+        "Mantén los ajustes ortográficos: je mangeais, pero nous mangions; je commençais, pero nous commencions.",
+        "No borres la i de -ions y -iez: nous étudiions, vous étudiiez."
+      ],
+      "examples": [
+        {
+          "verb": "faire",
+          "tense": "Indicatif — imparfait",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je faisais",
+            "tu faisais",
+            "il faisait / elle faisait / on faisait",
+            "nous faisions",
+            "vous faisiez",
+            "ils faisaient / elles faisaient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — imparfait"
+        },
+        {
+          "verb": "être",
+          "tense": "Indicatif — imparfait",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "j'étais",
+            "tu étais",
+            "il était / elle était / on était",
+            "nous étions",
+            "vous étiez",
+            "ils étaient / elles étaient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — imparfait"
+        }
+      ],
+      "sourceIds": [
+        "imparfait"
+      ],
+      "practiceVerbs": [
+        "parler",
+        "finir",
+        "faire",
+        "avoir",
+        "être",
+        "manger",
+        "commencer"
+      ]
+    },
+    {
+      "id": "future",
+      "title": "La R del futuro",
+      "subtitle": "Futur simple · raíz + ai, as, a…",
+      "rule": "Usa una base terminada en r y añade ai, as, a, ons, ez, ont. En parler y finir coincide con el infinitivo; vendre pierde su e final.",
+      "memoryTip": "Imagina que la r lleva el verbo hacia mañana: parler-ai, finir-ai, vendr-ai.",
+      "formula": [
+        "parler- / finir- / vendr- + ai / as / a / ons / ez / ont"
+      ],
+      "pitfalls": [
+        "Hay bases irregulares: ser-, aur-, ir-, fer-, viendr-, pourr-, voudr-, saur-, verr-, courr-.",
+        "También hay ajustes escritos: acheter → achèter-, appeler → appeller-, envoyer → enverr-. Consulta el modelo del verbo."
+      ],
+      "examples": [
+        {
+          "verb": "parler",
+          "tense": "Indicatif — futur simple",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je parlerai",
+            "tu parleras",
+            "il parlera / elle parlera / on parlera",
+            "nous parlerons",
+            "vous parlerez",
+            "ils parleront / elles parleront"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — futur simple"
+        },
+        {
+          "verb": "aller",
+          "tense": "Indicatif — futur simple",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "j'irai",
+            "tu iras",
+            "il ira / elle ira / on ira",
+            "nous irons",
+            "vous irez",
+            "ils iront / elles iront"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — futur simple"
+        }
+      ],
+      "sourceIds": [
+        "future",
+        "vouloir"
+      ],
+      "practiceVerbs": [
+        "parler",
+        "finir",
+        "vendre",
+        "être",
+        "avoir",
+        "aller",
+        "faire",
+        "venir",
+        "pouvoir",
+        "vouloir"
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "Futuro + finales del imparfait",
+      "subtitle": "Conditionnel présent · dos piezas conocidas",
+      "rule": "Conserva la base del futuro y añade ais, ais, ait, ions, iez, aient.",
+      "memoryTip": "Si ya sabes je serai, cambia la terminación: je serais. La base ser- se queda.",
+      "formula": [
+        "ser- + ais / ais / ait / ions / iez / aient"
+      ],
+      "pitfalls": [
+        "Je serai y je serais tienen sentidos distintos. La escritura mantiene -ai para futuro y -ais para condicional.",
+        "Para una hipótesis habitual: si j’avais le temps, je voyagerais. No uses si j’aurais en esta estructura."
+      ],
+      "examples": [
+        {
+          "verb": "être",
+          "tense": "Conditionnel — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je serais",
+            "tu serais",
+            "il serait / elle serait / on serait",
+            "nous serions",
+            "vous seriez",
+            "ils seraient / elles seraient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Conditionnel — présent"
+        },
+        {
+          "verb": "vouloir",
+          "tense": "Conditionnel — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je voudrais",
+            "tu voudrais",
+            "il voudrait / elle voudrait / on voudrait",
+            "nous voudrions",
+            "vous voudriez",
+            "ils voudraient / elles voudraient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Conditionnel — présent"
+        }
+      ],
+      "sourceIds": [
+        "conditional",
+        "conditionalUse"
+      ],
+      "practiceVerbs": [
+        "être",
+        "avoir",
+        "aller",
+        "faire",
+        "pouvoir",
+        "vouloir"
+      ]
+    },
+    {
+      "id": "passe-compose",
+      "title": "Una pareja para contar lo que hiciste",
+      "subtitle": "Passé composé · auxiliar + participio",
+      "rule": "Conjuga avoir o être en presente y añade el participio pasado del verbo.",
+      "memoryTip": "Piensa en dos piezas: «j’ai» + «parlé». Aprende cada verbo con su auxiliar y su participio: aller → être + allé.",
+      "formula": [
+        "avoir / être en presente + participio"
+      ],
+      "pitfalls": [
+        "No traduzcas automáticamente el auxiliar desde el español. Être usa avoir: j’ai été.",
+        "Moverse no basta para elegir être: courir → j’ai couru. Algunos verbos cambian según la construcción: elle est sortie / elle a sorti le vélo.",
+        "Con être no pronominal hay concordancia con el sujeto: il est allé, elle est allée, ils sont allés, elles sont allées.",
+        "Con avoir no hay concordancia automática con el sujeto. Un complemento directo anterior puede exigirla: les lettres que j’ai écrites.",
+        "Los pronominales usan être, pero su concordancia tiene condiciones: elles se sont lavées / elles se sont lavé les mains / elles se sont parlé."
+      ],
+      "examples": [
+        {
+          "verb": "parler",
+          "tense": "Indicatif — passé composé",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "j'ai parlé",
+            "tu as parlé",
+            "il a parlé / elle a parlé / on a parlé",
+            "nous avons parlé",
+            "vous avez parlé",
+            "ils ont parlé / elles ont parlé"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — passé composé"
+        },
+        {
+          "verb": "aller",
+          "tense": "Indicatif — passé composé",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "je suis allé / je suis allée",
+            "tu es allé / tu es allée",
+            "il est allé / elle est allée / on est allé / on est allée / on est allés / on est allées",
+            "nous sommes allés / nous sommes allées",
+            "vous êtes allé / vous êtes allée / vous êtes allés / vous êtes allées",
+            "ils sont allés / elles sont allées"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Indicatif — passé composé"
+        }
+      ],
+      "sourceIds": [
+        "pc",
+        "aux",
+        "accordAvoir",
+        "accordEtre",
+        "pronominal"
+      ],
+      "practiceVerbs": [
+        "parler",
+        "finir",
+        "aller",
+        "être",
+        "avoir",
+        "faire",
+        "prendre",
+        "venir"
+      ]
+    }
+  ],
+  "irregulars": [
+    {
+      "verb": "être",
+      "translation": "ser; estar",
+      "memoryTip": "Aprende las seis como un pequeño equipo: suis, es, est, sommes, êtes, sont.",
+      "anchors": [
+        "je suis",
+        "nous sommes",
+        "ils sont / elles sont"
+      ],
+      "present": [
+        "je suis",
+        "tu es",
+        "il est / elle est / on est",
+        "nous sommes",
+        "vous êtes",
+        "ils sont / elles sont"
+      ],
+      "futureRoot": "ser-",
+      "future": [
+        "je serai",
+        "tu seras",
+        "il sera / elle sera / on sera",
+        "nous serons",
+        "vous serez",
+        "ils seront / elles seront"
+      ],
+      "participle": [
+        "été",
+        "été",
+        "été",
+        "été"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_6b230159f222",
+        "phrase": "Je suis professeur.",
+        "translation": "Soy profesor.",
+        "audio": "audio/frn_d41a9bd4a607ba4d9141.mp3"
+      }
+    },
+    {
+      "verb": "avoir",
+      "translation": "tener; haber (auxiliar)",
+      "memoryTip": "Guarda j’ai / nous avons / ils ont, y comprueba tu as, il a y vous avez.",
+      "anchors": [
+        "j'ai",
+        "nous avons",
+        "ils ont / elles ont"
+      ],
+      "present": [
+        "j'ai",
+        "tu as",
+        "il a / elle a / on a",
+        "nous avons",
+        "vous avez",
+        "ils ont / elles ont"
+      ],
+      "futureRoot": "aur-",
+      "future": [
+        "j'aurai",
+        "tu auras",
+        "il aura / elle aura / on aura",
+        "nous aurons",
+        "vous aurez",
+        "ils auront / elles auront"
+      ],
+      "participle": [
+        "eu",
+        "eue",
+        "eus",
+        "eues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_00300ba47858",
+        "phrase": "J'ai une question.",
+        "translation": "Tengo una pregunta.",
+        "audio": "audio/frn_8a25904247aaf20e1e00.mp3"
+      }
+    },
+    {
+      "verb": "aller",
+      "translation": "ir",
+      "memoryTip": "Tres caras: vais / allons / vont. Atención también a vous allez.",
+      "anchors": [
+        "je vais",
+        "nous allons",
+        "ils vont / elles vont"
+      ],
+      "present": [
+        "je vais",
+        "tu vas",
+        "il va / elle va / on va",
+        "nous allons",
+        "vous allez",
+        "ils vont / elles vont"
+      ],
+      "futureRoot": "ir-",
+      "future": [
+        "j'irai",
+        "tu iras",
+        "il ira / elle ira / on ira",
+        "nous irons",
+        "vous irez",
+        "ils iront / elles iront"
+      ],
+      "participle": [
+        "allé",
+        "allée",
+        "allés",
+        "allées"
+      ],
+      "auxiliary": "être",
+      "sourceIds": [
+        "present",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_3f7a5e618586",
+        "phrase": "Je vais à la gare.",
+        "translation": "Voy a la estación.",
+        "audio": "audio/frn_e387d89e8812385cea71.mp3"
+      }
+    },
+    {
+      "verb": "faire",
+      "translation": "hacer",
+      "memoryTip": "Fais / faisons / font; guarda vous faites en una ficha propia.",
+      "anchors": [
+        "je fais",
+        "nous faisons",
+        "ils font / elles font"
+      ],
+      "present": [
+        "je fais",
+        "tu fais",
+        "il fait / elle fait / on fait",
+        "nous faisons",
+        "vous faites",
+        "ils font / elles font"
+      ],
+      "futureRoot": "fer-",
+      "future": [
+        "je ferai",
+        "tu feras",
+        "il fera / elle fera / on fera",
+        "nous ferons",
+        "vous ferez",
+        "ils feront / elles feront"
+      ],
+      "participle": [
+        "fait",
+        "faite",
+        "faits",
+        "faites"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_9d62f39f9143",
+        "phrase": "Je fais un exercice.",
+        "translation": "Hago un ejercicio.",
+        "audio": "audio/frn_0204de18fe060cad4187.mp3"
+      }
+    },
+    {
+      "verb": "prendre",
+      "translation": "tomar; coger",
+      "memoryTip": "Prends / prenons / prennent: observa d, n y nn.",
+      "anchors": [
+        "je prends",
+        "nous prenons",
+        "ils prennent / elles prennent"
+      ],
+      "present": [
+        "je prends",
+        "tu prends",
+        "il prend / elle prend / on prend",
+        "nous prenons",
+        "vous prenez",
+        "ils prennent / elles prennent"
+      ],
+      "futureRoot": "prendr-",
+      "future": [
+        "je prendrai",
+        "tu prendras",
+        "il prendra / elle prendra / on prendra",
+        "nous prendrons",
+        "vous prendrez",
+        "ils prendront / elles prendront"
+      ],
+      "participle": [
+        "pris",
+        "prise",
+        "pris",
+        "prises"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "irregular",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_f5cf5e12c1ad",
+        "phrase": "Je prends le train.",
+        "translation": "Cojo el tren.",
+        "audio": "audio/frn_100bf397f305e0369b4b.mp3"
+      }
+    },
+    {
+      "verb": "venir",
+      "translation": "venir",
+      "memoryTip": "Viens / venons / viennent: tres anclas para cambiar de raíz.",
+      "anchors": [
+        "je viens",
+        "nous venons",
+        "ils viennent / elles viennent"
+      ],
+      "present": [
+        "je viens",
+        "tu viens",
+        "il vient / elle vient / on vient",
+        "nous venons",
+        "vous venez",
+        "ils viennent / elles viennent"
+      ],
+      "futureRoot": "viendr-",
+      "future": [
+        "je viendrai",
+        "tu viendras",
+        "il viendra / elle viendra / on viendra",
+        "nous viendrons",
+        "vous viendrez",
+        "ils viendront / elles viendront"
+      ],
+      "participle": [
+        "venu",
+        "venue",
+        "venus",
+        "venues"
+      ],
+      "auxiliary": "être",
+      "sourceIds": [
+        "irregular",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_2b89b8860027",
+        "phrase": "Je viens avec toi.",
+        "translation": "Voy contigo.",
+        "audio": "audio/frn_3952b7a31eb951fbae33.mp3"
+      }
+    },
+    {
+      "verb": "pouvoir",
+      "translation": "poder",
+      "memoryTip": "Peux / pouvons / peuvent; je y tu llevan x.",
+      "anchors": [
+        "je peux / je puis",
+        "nous pouvons",
+        "ils peuvent / elles peuvent"
+      ],
+      "present": [
+        "je peux / je puis",
+        "tu peux",
+        "il peut / elle peut / on peut",
+        "nous pouvons",
+        "vous pouvez",
+        "ils peuvent / elles peuvent"
+      ],
+      "futureRoot": "pourr-",
+      "future": [
+        "je pourrai",
+        "tu pourras",
+        "il pourra / elle pourra / on pourra",
+        "nous pourrons",
+        "vous pourrez",
+        "ils pourront / elles pourront"
+      ],
+      "participle": [
+        "pu",
+        "pue",
+        "pus",
+        "pues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_3db01bf62ab6",
+        "phrase": "Je peux venir demain.",
+        "translation": "Puedo venir mañana.",
+        "audio": "audio/frn_a66e1037af89579d57b2.mp3"
+      }
+    },
+    {
+      "verb": "vouloir",
+      "translation": "querer",
+      "memoryTip": "Veux / voulons / veulent; je y tu llevan x.",
+      "anchors": [
+        "je veux",
+        "nous voulons",
+        "ils veulent / elles veulent"
+      ],
+      "present": [
+        "je veux",
+        "tu veux",
+        "il veut / elle veut / on veut",
+        "nous voulons",
+        "vous voulez",
+        "ils veulent / elles veulent"
+      ],
+      "futureRoot": "voudr-",
+      "future": [
+        "je voudrai",
+        "tu voudras",
+        "il voudra / elle voudra / on voudra",
+        "nous voudrons",
+        "vous voudrez",
+        "ils voudront / elles voudront"
+      ],
+      "participle": [
+        "voulu",
+        "voulue",
+        "voulus",
+        "voulues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present",
+        "vouloir"
+      ],
+      "materialExample": {
+        "id": "fr_1623eb89b057",
+        "phrase": "Je veux apprendre le français.",
+        "translation": "Quiero aprender francés.",
+        "audio": "audio/frn_6edcef21a440430a9660.mp3"
+      }
+    },
+    {
+      "verb": "savoir",
+      "translation": "saber",
+      "memoryTip": "Sais / savons / savent: aprende el cambio sai- / sav-.",
+      "anchors": [
+        "je sais",
+        "nous savons",
+        "ils savent / elles savent"
+      ],
+      "present": [
+        "je sais",
+        "tu sais",
+        "il sait / elle sait / on sait",
+        "nous savons",
+        "vous savez",
+        "ils savent / elles savent"
+      ],
+      "futureRoot": "saur-",
+      "future": [
+        "je saurai",
+        "tu sauras",
+        "il saura / elle saura / on saura",
+        "nous saurons",
+        "vous saurez",
+        "ils sauront / elles sauront"
+      ],
+      "participle": [
+        "su",
+        "sue",
+        "sus",
+        "sues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_35c2aca5db66",
+        "phrase": "Je sais nager.",
+        "translation": "Sé nadar.",
+        "audio": "audio/frn_4396641da1d733bc9338.mp3"
+      }
+    },
+    {
+      "verb": "voir",
+      "translation": "ver",
+      "memoryTip": "Vois / voyons / voient: nous y vous tienen y.",
+      "anchors": [
+        "je vois",
+        "nous voyons",
+        "ils voient / elles voient"
+      ],
+      "present": [
+        "je vois",
+        "tu vois",
+        "il voit / elle voit / on voit",
+        "nous voyons",
+        "vous voyez",
+        "ils voient / elles voient"
+      ],
+      "futureRoot": "verr-",
+      "future": [
+        "je verrai",
+        "tu verras",
+        "il verra / elle verra / on verra",
+        "nous verrons",
+        "vous verrez",
+        "ils verront / elles verront"
+      ],
+      "participle": [
+        "vu",
+        "vue",
+        "vus",
+        "vues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "irregular",
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_f61d9bebb3b8",
+        "phrase": "Je vois la gare.",
+        "translation": "Veo la estación.",
+        "audio": "audio/frn_3989612b532f8b75adec.mp3"
+      }
+    },
+    {
+      "verb": "mettre",
+      "translation": "poner",
+      "memoryTip": "Mets / mettons / mettent: un t en singular, dos en plural.",
+      "anchors": [
+        "je mets",
+        "nous mettons",
+        "ils mettent / elles mettent"
+      ],
+      "present": [
+        "je mets",
+        "tu mets",
+        "il met / elle met / on met",
+        "nous mettons",
+        "vous mettez",
+        "ils mettent / elles mettent"
+      ],
+      "futureRoot": "mettr-",
+      "future": [
+        "je mettrai",
+        "tu mettras",
+        "il mettra / elle mettra / on mettra",
+        "nous mettrons",
+        "vous mettrez",
+        "ils mettront / elles mettront"
+      ],
+      "participle": [
+        "mis",
+        "mise",
+        "mis",
+        "mises"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "irregular"
+      ],
+      "materialExample": {
+        "id": "fr_abc17b61af5f",
+        "phrase": "Je mets le livre ici.",
+        "translation": "Pongo el libro aquí.",
+        "audio": "audio/frn_370fe422d7c5f94d738b.mp3"
+      }
+    },
+    {
+      "verb": "dire",
+      "translation": "decir",
+      "memoryTip": "Dis / disons / disent; recuerda la sorpresa vous dites.",
+      "anchors": [
+        "je dis",
+        "nous disons",
+        "ils disent / elles disent"
+      ],
+      "present": [
+        "je dis",
+        "tu dis",
+        "il dit / elle dit / on dit",
+        "nous disons",
+        "vous dites",
+        "ils disent / elles disent"
+      ],
+      "futureRoot": "dir-",
+      "future": [
+        "je dirai",
+        "tu diras",
+        "il dira / elle dira / on dira",
+        "nous dirons",
+        "vous direz",
+        "ils diront / elles diront"
+      ],
+      "participle": [
+        "dit",
+        "dite",
+        "dits",
+        "dites"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "present"
+      ],
+      "materialExample": {
+        "id": "fr_2419cac36f35",
+        "phrase": "Tu peux dire ton nom ?",
+        "translation": "¿Puedes decir tu nombre?",
+        "audio": "audio/frn_e44cce46a14336ad2fa5.mp3"
+      }
+    },
+    {
+      "verb": "lire",
+      "translation": "leer",
+      "memoryTip": "Lis / lisons / lisent; separa il lit de tu lis.",
+      "anchors": [
+        "je lis",
+        "nous lisons",
+        "ils lisent / elles lisent"
+      ],
+      "present": [
+        "je lis",
+        "tu lis",
+        "il lit / elle lit / on lit",
+        "nous lisons",
+        "vous lisez",
+        "ils lisent / elles lisent"
+      ],
+      "futureRoot": "lir-",
+      "future": [
+        "je lirai",
+        "tu liras",
+        "il lira / elle lira / on lira",
+        "nous lirons",
+        "vous lirez",
+        "ils liront / elles liront"
+      ],
+      "participle": [
+        "lu",
+        "lue",
+        "lus",
+        "lues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "lire"
+      ],
+      "materialExample": {
+        "id": "fr_64be944d6e0c",
+        "phrase": "Je lis un livre.",
+        "translation": "Leo un libro.",
+        "audio": "audio/frn_56bc8edc1121c1ccd02f.mp3"
+      }
+    },
+    {
+      "verb": "écrire",
+      "translation": "escribir",
+      "memoryTip": "Écris / écrivons / écrivent: aparece v en el plural.",
+      "anchors": [
+        "j'écris",
+        "nous écrivons",
+        "ils écrivent / elles écrivent"
+      ],
+      "present": [
+        "j'écris",
+        "tu écris",
+        "il écrit / elle écrit / on écrit",
+        "nous écrivons",
+        "vous écrivez",
+        "ils écrivent / elles écrivent"
+      ],
+      "futureRoot": "écrir-",
+      "future": [
+        "j'écrirai",
+        "tu écriras",
+        "il écrira / elle écrira / on écrira",
+        "nous écrirons",
+        "vous écrirez",
+        "ils écriront / elles écriront"
+      ],
+      "participle": [
+        "écrit",
+        "écrite",
+        "écrits",
+        "écrites"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "irregular"
+      ],
+      "materialExample": {
+        "id": "fr_ee40af5a7c59",
+        "phrase": "J'écris une phrase.",
+        "translation": "Escribo una frase.",
+        "audio": "audio/frn_ae3ec48c980560d0cbe4.mp3"
+      }
+    },
+    {
+      "verb": "boire",
+      "translation": "beber",
+      "memoryTip": "Bois / buvons / boivent: guarda las tres raíces juntas.",
+      "anchors": [
+        "je bois",
+        "nous buvons",
+        "ils boivent / elles boivent"
+      ],
+      "present": [
+        "je bois",
+        "tu bois",
+        "il boit / elle boit / on boit",
+        "nous buvons",
+        "vous buvez",
+        "ils boivent / elles boivent"
+      ],
+      "futureRoot": "boir-",
+      "future": [
+        "je boirai",
+        "tu boiras",
+        "il boira / elle boira / on boira",
+        "nous boirons",
+        "vous boirez",
+        "ils boiront / elles boiront"
+      ],
+      "participle": [
+        "bu",
+        "bue",
+        "bus",
+        "bues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "boire"
+      ],
+      "materialExample": {
+        "id": "fr_6a3aec982109",
+        "phrase": "Je bois de l'eau.",
+        "translation": "Bebo agua.",
+        "audio": "audio/frn_ba5e18c647a14942e293.mp3"
+      }
+    },
+    {
+      "verb": "courir",
+      "translation": "correr",
+      "memoryTip": "Cours / courons / courent; futuro con doble r: courr-.",
+      "anchors": [
+        "je cours",
+        "nous courons",
+        "ils courent / elles courent"
+      ],
+      "present": [
+        "je cours",
+        "tu cours",
+        "il court / elle court / on court",
+        "nous courons",
+        "vous courez",
+        "ils courent / elles courent"
+      ],
+      "futureRoot": "courr-",
+      "future": [
+        "je courrai",
+        "tu courras",
+        "il courra / elle courra / on courra",
+        "nous courrons",
+        "vous courrez",
+        "ils courront / elles courront"
+      ],
+      "participle": [
+        "couru",
+        "courue",
+        "courus",
+        "courues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "future"
+      ],
+      "materialExample": {
+        "id": "fr_001b7ca0799d",
+        "phrase": "Je cours dans le parc.",
+        "translation": "Corro por el parque.",
+        "audio": "audio/frn_c7f646d5aac4ad03a5f4.mp3"
+      }
+    },
+    {
+      "verb": "dormir",
+      "translation": "dormir",
+      "memoryTip": "Dors / dormons / dorment: el m reaparece en el plural.",
+      "anchors": [
+        "je dors",
+        "nous dormons",
+        "ils dorment / elles dorment"
+      ],
+      "present": [
+        "je dors",
+        "tu dors",
+        "il dort / elle dort / on dort",
+        "nous dormons",
+        "vous dormez",
+        "ils dorment / elles dorment"
+      ],
+      "futureRoot": "dormir-",
+      "future": [
+        "je dormirai",
+        "tu dormiras",
+        "il dormira / elle dormira / on dormira",
+        "nous dormirons",
+        "vous dormirez",
+        "ils dormiront / elles dormiront"
+      ],
+      "participle": [
+        "dormi",
+        "dormie",
+        "dormis",
+        "dormies"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "dormir"
+      ],
+      "materialExample": {
+        "id": "fr_fc5ed9f5c6ff",
+        "phrase": "Je dors bien.",
+        "translation": "Duermo bien.",
+        "audio": "audio/frn_d59c1114f71afd564175.mp3"
+      }
+    },
+    {
+      "verb": "devoir",
+      "translation": "deber; tener que",
+      "memoryTip": "Dois / devons / doivent: conserva las tres anclas juntas.",
+      "anchors": [
+        "je dois",
+        "nous devons",
+        "ils doivent / elles doivent"
+      ],
+      "present": [
+        "je dois",
+        "tu dois",
+        "il doit / elle doit / on doit",
+        "nous devons",
+        "vous devez",
+        "ils doivent / elles doivent"
+      ],
+      "futureRoot": "devr-",
+      "future": [
+        "je devrai",
+        "tu devras",
+        "il devra / elle devra / on devra",
+        "nous devrons",
+        "vous devrez",
+        "ils devront / elles devront"
+      ],
+      "participle": [
+        "dû",
+        "due",
+        "dus",
+        "dues"
+      ],
+      "auxiliary": "avoir",
+      "sourceIds": [
+        "irregular"
+      ],
+      "materialExample": {
+        "id": "fr_f586983dc3ed",
+        "phrase": "Je dois travailler.",
+        "translation": "Tengo que trabajar.",
+        "audio": "audio/frn_f40a50c3e8c167103454.mp3"
+      }
+    }
+  ],
+  "studyRoute": {
+    "label": "Prueba antes de mirar",
+    "isPedagogicalSuggestion": true,
+    "steps": [
+      {
+        "title": "Elige una familia",
+        "body": "Empieza con parler o finir y después añade dos verbos frecuentes como être y avoir."
+      },
+      {
+        "title": "Recupera la forma",
+        "body": "Tapa la tabla. Escribe una forma para je, otra para nous y otra para ils; comprueba también tu, il y vous."
+      },
+      {
+        "title": "Comprueba y explica",
+        "body": "Revela el modelo y di qué cambió: raíz, terminación, auxiliar o acuerdo."
+      },
+      {
+        "title": "Llévalo a tu vida",
+        "body": "Di una frase verdadera, cambia de persona y vuelve a decirla. Escucha el ejemplo de tu material y repítelo."
+      },
+      {
+        "title": "Vuelve a intentarlo",
+        "body": "Recupera mañana las formas que fallaste y mézclalas con otras que ya sabes, siempre antes de ver la respuesta."
+      }
+    ]
+  },
+  "sources": {
+    "present": {
+      "title": "OQLF · Terminaciones del presente",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24213/la-grammaire/le-verbe/conjugaison/terminaison-des-verbes-reguliers-et-irreguliers-au-present-de-lindicatif"
+    },
+    "regular": {
+      "title": "OQLF · Raíces regulares del presente",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24212/la-grammaire/le-verbe/conjugaison/radical-des-verbes-reguliers-au-present-de-lindicatif"
+    },
+    "irregular": {
+      "title": "OQLF · Raíces irregulares del presente",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24214/la-grammaire/le-verbe/conjugaison/radical-des-verbes-irreguliers-au-present-de-lindicatif"
+    },
+    "er": {
+      "title": "OQLF · Verbos regulares en -er",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26584199/verbe-regulier-en-er"
+    },
+    "ir": {
+      "title": "OQLF · Verbos regulares en -ir",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26584200/verbe-regulier-en-ir"
+    },
+    "vendre": {
+      "title": "Académie française · Vendre",
+      "url": "https://www.dictionnaire-academie.fr/conjuguer/A9V0354"
+    },
+    "imparfait": {
+      "title": "OQLF · Formas del imparfait",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24195/la-grammaire/le-verbe/conjugaison/formes-de-limparfait"
+    },
+    "future": {
+      "title": "OQLF · Formas del futur simple",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24655/la-grammaire/le-verbe/conjugaison/formes-du-futur-simple"
+    },
+    "conditional": {
+      "title": "OQLF · Formas del conditionnel",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24137/la-grammaire/le-verbe/conjugaison/formes-du-conditionnel"
+    },
+    "pc": {
+      "title": "OQLF · Passé composé",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24218/la-grammaire/le-verbe/temps-grammaticaux/passe/generalites-sur-le-passe-compose"
+    },
+    "aux": {
+      "title": "OQLF · Elección de avoir y être",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24224/la-grammaire/le-verbe/auxiliaires/emploi-des-auxiliaires-avoir-et-etre"
+    },
+    "accordAvoir": {
+      "title": "OQLF · Concordancia con avoir",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/21546/la-grammaire/le-verbe/accord-du-participe-passe/avec-lauxiliaire-avoir/accord-du-participe-passe-employe-avec-lauxiliaire-avoir"
+    },
+    "accordEtre": {
+      "title": "OQLF · Concordancia con être y pronominales",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24222/la-grammaire/le-verbe/accord-du-participe-passe/avec-lauxiliaire-etre/synthese-des-regles-daccord-du-participe-passe-employe-avec-etre"
+    },
+    "pronominal": {
+      "title": "OQLF · Verbos ocasionalmente pronominales",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/22942/la-grammaire/le-verbe/accord-du-participe-passe/avec-lauxiliaire-etre/accord-du-participe-passe-des-verbes-occasionnellement-pronominaux"
+    },
+    "vouloir": {
+      "title": "Académie française · Vouloir",
+      "url": "https://www.dictionnaire-academie.fr/conjuguer/A9V1230"
+    },
+    "boire": {
+      "title": "Académie française · Boire",
+      "url": "https://dictionnaire-academie.fr/conjuguer/A9B1462"
+    },
+    "lire": {
+      "title": "Académie française · Lire",
+      "url": "https://www.dictionnaire-academie.fr/conjuguer/A9L0973"
+    },
+    "dormir": {
+      "title": "Académie française · Dormir",
+      "url": "https://www.dictionnaire-academie.fr/conjuguer/A9D3072"
+    },
+    "conditionalUse": {
+      "title": "OQLF · Condicional en hipótesis",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24140/la-grammaire/le-verbe/temps-grammaticaux/conditionnel/conditionnel-dans-les-phrases-hypothetiques"
+    }
+  },
+  "implementationNotes": [
+    "Mostrar los modelos de seis personas tras un botón «Ver las seis formas».",
+    "Las tarjetas de futuro y condicional usan una segmentación pedagógica que incluye la r en la base; OQLF segmenta algunas terminaciones de otra manera. Las formas resultantes son las mismas.",
+    "No generar automáticamente conjugaciones por la terminación del infinitivo. Usar siempre las formas exactas de verbs.json.",
+    "No reproducir el audio de una frase como si fuera audio aislado de una conjugación: indicar «Escuchar el ejemplo».",
+    "No asignar nivel MCER nuevo ni crear un calendario persistente; la ruta es una recomendación, no una función de seguimiento."
+  ]
+}
