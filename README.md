@@ -73,3 +73,10 @@ Esta exportación contiene la web y sus avisos de licencia. Omite credenciales d
 El archivo [`.github/workflows/pages.yml`](.github/workflows/pages.yml) permite desplegar `dist` mediante una ejecución manual. No se ejecuta automáticamente al subir cambios y su presencia no significa que GitHub Pages esté configurado o publicado.
 
 Para usarlo, el propietario debe seleccionar **GitHub Actions** como fuente de publicación en los ajustes de **Pages** del repositorio y después ejecutar **Publicar Atelier en GitHub Pages** desde **Actions → Run workflow**. La disponibilidad de Pages y la visibilidad de la web dependen de la cuenta y de la configuración del repositorio. La dirección definitiva aparece en el despliegue completado.
+
+
+## Tren ampliado y subjuntivo · 19 de octubre de 2026
+
+El tren incluye 11 tiempos cotidianos, mezclas por familia y un recorrido opcional de passé simple para lectura. Los 11 patrones de formación incluyen tres nuevos de subjuntivo. Hay ocho irregulares, seis usos, cuatro contrastes y 16 situaciones: intento escrito, solución explícita y práctica de refuerzo. Formas exactas del corpus; fuentes OQLF y Académie française.
+
+La ampliación general de imágenes y audio sigue en producción; esta actualización conserva los medios ya publicados.

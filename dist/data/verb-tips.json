@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": "2026-10-19-train-subjunctive",
   "locale": "es",
   "title": "El déclic de los verbos",
   "intro": "Descubre el patrón, tapa el modelo y úsalo en una frase tuya. Los trucos ayudan a recordar; las tablas muestran las formas completas.",
@@ -529,6 +529,258 @@
         "faire",
         "prendre",
         "venir"
+      ]
+    },
+    {
+      "id": "subjunctive-two-stems",
+      "title": "Dos estaciones: ils y nous",
+      "subtitle": "Subjonctif présent · formar antes de memorizar",
+      "rule": "Para muchos verbos, ils en presente da la base de je, tu, il/elle/on e ils/elles; nous en presente da la de nous y vous. Añade e, es, e, ions, iez, ent. Comprueba aparte las raíces irregulares.",
+      "memoryTip": "Dibuja cuatro viajeros junto a ils y dos junto a nous: ils prennent → prenn-, nous prenons → pren-.",
+      "formula": [
+        "ils prennent − ent → prenn- : que je prenne, qu’ils prennent",
+        "nous prenons − ons → pren- : que nous prenions, que vous preniez",
+        "e / es / e | ions / iez | ent"
+      ],
+      "pitfalls": [
+        "Es una ayuda para muchos verbos; no deriva automáticamente être, avoir, faire, pouvoir o savoir.",
+        "Respeta los ajustes escritos: nous mangeons → que nous mangions; nous commençons → que nous commencions.",
+        "Conserva la i de -ions/-iez: que nous étudiions, que vous étudiiez.",
+        "Una forma puede sonar igual y escribirse diferente: il voit / qu’il voie."
+      ],
+      "examples": [
+        {
+          "verb": "prendre",
+          "verbRank": 59,
+          "tense": "Subjonctif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que je prenne",
+            "que tu prennes",
+            "qu'il prenne / qu'elle prenne / qu'on prenne",
+            "que nous prenions",
+            "que vous preniez",
+            "qu'ils prennent / qu'elles prennent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — présent"
+        },
+        {
+          "verb": "venir",
+          "verbRank": 60,
+          "tense": "Subjonctif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que je vienne",
+            "que tu viennes",
+            "qu'il vienne / qu'elle vienne / qu'on vienne",
+            "que nous venions",
+            "que vous veniez",
+            "qu'ils viennent / qu'elles viennent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — présent"
+        },
+        {
+          "verb": "boire",
+          "verbRank": 143,
+          "tense": "Subjonctif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que je boive",
+            "que tu boives",
+            "qu'il boive / qu'elle boive / qu'on boive",
+            "que nous buvions",
+            "que vous buviez",
+            "qu'ils boivent / qu'elles boivent"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — présent"
+        }
+      ],
+      "sourceIds": [
+        "subjForms"
+      ],
+      "practiceVerbs": [
+        "parler",
+        "finir",
+        "prendre",
+        "venir",
+        "boire",
+        "comprendre",
+        "étudier"
+      ]
+    },
+    {
+      "id": "subjunctive-irregulars",
+      "title": "Ocho billetes especiales",
+      "subtitle": "Subjonctif présent · anclas para irregulares frecuentes",
+      "rule": "Aprende las seis formas de être y avoir. En faire, pouvoir y savoir, recuerda fass-, puiss- y sach-. Aller, vouloir y valoir alternan aill-/all-, veuill-/voul- y vaill-/val-.",
+      "memoryTip": "Recita tres anclas de cada verbo: que je… / que nous… / qu’ils…; después recupera las seis personas.",
+      "formula": [
+        "être : sois / soyons / soient · avoir : aie / ayons / aient",
+        "faire : fasse / fassions / fassent · pouvoir : puisse / puissions / puissent",
+        "savoir : sache / sachions / sachent",
+        "aller : aille / allions / aillent",
+        "vouloir : veuille / voulions / veuillent · valoir : vaille / valions / vaillent"
+      ],
+      "pitfalls": [
+        "Que nous soyons y que vous soyez; que nous ayons y que vous ayez: sin añadir una i.",
+        "Il faut que… es un desencadenante; el subjuntivo de falloir es qu’il faille.",
+        "No conviertas tres anclas en una regla universal: abre la tabla si cambia la escritura."
+      ],
+      "examples": [
+        {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que je sois",
+            "que tu sois",
+            "qu'il soit / qu'elle soit / qu'on soit",
+            "que nous soyons",
+            "que vous soyez",
+            "qu'ils soient / qu'elles soient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — présent"
+        },
+        {
+          "verb": "avoir",
+          "verbRank": 5,
+          "tense": "Subjonctif — présent",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que j'aie",
+            "que tu aies",
+            "qu'il ait / qu'elle ait / qu'on ait",
+            "que nous ayons",
+            "que vous ayez",
+            "qu'ils aient / qu'elles aient"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — présent"
+        }
+      ],
+      "sourceIds": [
+        "subjForms"
+      ],
+      "practiceVerbs": [
+        "être",
+        "avoir",
+        "aller",
+        "faire",
+        "pouvoir",
+        "savoir",
+        "vouloir",
+        "valoir"
+      ]
+    },
+    {
+      "id": "subjunctive-present-past",
+      "title": "¿Ahora/después o ya terminado?",
+      "subtitle": "Subjonctif présent y passé · situar la acción",
+      "rule": "El présent puede hablar de ahora o de después. El passé combina avoir o être en subjonctif présent + participio y permite señalar una acción anterior o ya cumplida.",
+      "memoryTip": "Primero elige el modo por la construcción; después pregunta si la acción debe estar cumplida.",
+      "formula": [
+        "Je suis content que tu viennes demain. → Me alegro de que vengas mañana.",
+        "Je suis content que tu sois venu hier. → Me alegro de que hayas venido ayer.",
+        "que tu aies fini · qu’elle soit arrivée · qu’elles soient arrivées"
+      ],
+      "pitfalls": [
+        "No se forma un futur du subjonctif en francés: que tu viennes demain sigue en présent.",
+        "El auxiliar es el del verbo: finir → avoir; venir y arriver → être.",
+        "Con être en estos ejemplos, el participio concuerda: elle est arrivée → qu’elle soit arrivée; elles → qu’elles soient arrivées.",
+        "Con avoir no se añade concordancia con el sujeto de forma automática; el complemento directo anterior puede cambiar el acuerdo."
+      ],
+      "examples": [
+        {
+          "verb": "finir",
+          "verbRank": 191,
+          "tense": "Subjonctif — passé",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que j'aie fini",
+            "que tu aies fini",
+            "qu'il ait fini / qu'elle ait fini / qu'on ait fini",
+            "que nous ayons fini",
+            "que vous ayez fini",
+            "qu'ils aient fini / qu'elles aient fini"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — passé"
+        },
+        {
+          "verb": "venir",
+          "verbRank": 60,
+          "tense": "Subjonctif — passé",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "forms": [
+            "que je sois venu / que je sois venue",
+            "que tu sois venu / que tu sois venue",
+            "qu'il soit venu / qu'elle soit venue / qu'on soit venu / qu'on soit venue / qu'on soit venus / qu'on soit venues",
+            "que nous soyons venus / que nous soyons venues",
+            "que vous soyez venu / que vous soyez venue / que vous soyez venus / que vous soyez venues",
+            "qu'ils soient venus / qu'elles soient venues"
+          ],
+          "provenance": "dist/data/verbs.json · temps · Subjonctif — passé"
+        }
+      ],
+      "sourceIds": [
+        "subjForms",
+        "subjUses",
+        "subjSequence"
+      ],
+      "practiceVerbs": [
+        "finir",
+        "venir",
+        "arriver",
+        "faire",
+        "parler"
       ]
     }
   ],
@@ -1419,6 +1671,71 @@
     "conditionalUse": {
       "title": "OQLF · Condicional en hipótesis",
       "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24140/la-grammaire/le-verbe/temps-grammaticaux/conditionnel/conditionnel-dans-les-phrases-hypothetiques"
+    },
+    "subjForms": {
+      "title": "OQLF · Formes du subjonctif",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24237/la-grammaire/le-verbe/conjugaison/formes-du-subjonctif",
+      "note": "Verifica finales comunes, excepciones avoir/être, raíces irregulares y auxiliar + participio del passé."
+    },
+    "subjUses": {
+      "title": "OQLF · Généralités sur le subjonctif",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24236/la-grammaire/le-verbe/modes/subjonctif/generalites-sur-le-subjonctif",
+      "note": "Verifica voluntad, necesidad, duda y que el contexto sitúa el subjonctif en el tiempo."
+    },
+    "subjVerbs": {
+      "title": "OQLF · Subjonctif après certains verbes",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24253/la-grammaire/le-verbe/modes/subjonctif/subjonctif-apres-certains-verbes",
+      "note": "Verifica juicio apreciativo, voluntad y sentimiento."
+    },
+    "subjLinks": {
+      "title": "OQLF · Subjonctif ou indicatif après les subordonnants composés",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24238/la-grammaire/le-verbe/modes/subjonctif/subjonctif-ou-indicatif-apres-les-subordonnants-composes",
+      "note": "Verifica pour que, bien que y diferencias de modo según el enlace; bien que se practica aquí con el subjuntivo de la norma habitual."
+    },
+    "penserModes": {
+      "title": "Académie française · Penser",
+      "url": "https://www.dictionnaire-academie.fr/article/A9P1375",
+      "note": "El diccionario registra indicativo tras je pense que y tanto vienne como viendra tras je ne pense pas que; la negación no impone una única solución en todos los contextos."
+    },
+    "espererModes": {
+      "title": "Académie française · Espérer",
+      "url": "https://dictionnaire-academie.fr/article/A9E2630",
+      "note": "La forma afirmativa tiene ejemplos con indicativo, incluido futuro; no trasladar automáticamente el subjuntivo español."
+    },
+    "beforeAfter": {
+      "title": "Académie française · Après que",
+      "url": "https://www.academie-francaise.fr/apres-que",
+      "note": "Norma de aprendizaje: après que + indicativo frente a avant que + subjuntivo."
+    },
+    "beforeAfterOqlf": {
+      "title": "OQLF · Mode verbal avec après que et avant que",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/21132/la-grammaire/le-verbe/modes/concordance-des-temps/mode-verbal-avec-apres-que-et-avant-que",
+      "note": "Verifica el futur antérieur tras après que y distingue la acción anticipada de avant que."
+    },
+    "subjSequence": {
+      "title": "OQLF · Principes de la correspondance des temps",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/21175/la-grammaire/le-verbe/modes/concordance-des-temps/principes-de-la-correspondance-des-temps",
+      "note": "Verifica el passé du subjonctif para anterioridad y la admisión de présent/passé después de una principal pasada."
+    },
+    "pluperfect": {
+      "title": "Académie française · Plus-que-parfait",
+      "url": "https://www.dictionnaire-academie.fr/article/A9P2990",
+      "note": "Verifica être/avoir en imparfait + participio y la acción anterior al punto de referencia pasado."
+    },
+    "futureAnterior": {
+      "title": "OQLF · Le futur antérieur",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24129/la-grammaire/le-verbe/temps-grammaticaux/futur/le-futur-anterieur",
+      "note": "Verifica auxiliar en futur simple + participio y acción futura ya cumplida; el hint enseña este uso principal, sin pretender agotar sus valores."
+    },
+    "conditionalPast": {
+      "title": "OQLF · Conditionnel passé",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26560290/conditionnel-passe",
+      "note": "Usar la nota de formación: avoir/être en conditionnel présent + participio. Para la hipótesis con si, mantener también conditionalUse."
+    },
+    "imperative": {
+      "title": "OQLF · Formes de l’impératif",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/24203/la-grammaire/le-verbe/conjugaison/formes-de-limperatif",
+      "note": "Verifica las tres personas disponibles, ausencia de pronombre sujeto y excepciones de conjugación/escritura."
     }
   },
   "implementationNotes": [
@@ -1427,5 +1744,936 @@
     "No generar automáticamente conjugaciones por la terminación del infinitivo. Usar siempre las formas exactas de verbs.json.",
     "No reproducir el audio de una frase como si fuera audio aislado de una conjugación: indicar «Escuchar el ejemplo».",
     "No asignar nivel MCER nuevo ni crear un calendario persistente; la ruta es una recomendación, no una función de seguimiento."
-  ]
+  ],
+  "subjunctive": {
+    "version": 1,
+    "locale": "es",
+    "verifiedOn": "2026-10-19",
+    "title": "El cruce del subjuntivo",
+    "intro": "Primero decide qué quieres expresar; después forma el verbo. Que, por sí solo, no elige el modo.",
+    "sourcePolicy": "Contenido didáctico original. Reglas verificadas con OQLF y Académie française; tablas copiadas exactamente del corpus existente, sin modificar los originales. Las frases completas son nuevas y no se presentan como grabaciones originales.",
+    "corpusSha256": "93599bd25af166463434f25e51e0212dc56010888dd2dc32c371bfd1453952be",
+    "irregulars": [
+      {
+        "verb": "être",
+        "verbRank": 2,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je sois",
+          "que tu sois",
+          "qu'il soit / qu'elle soit / qu'on soit",
+          "que nous soyons",
+          "que vous soyez",
+          "qu'ils soient / qu'elles soient"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-être"
+      },
+      {
+        "verb": "avoir",
+        "verbRank": 5,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que j'aie",
+          "que tu aies",
+          "qu'il ait / qu'elle ait / qu'on ait",
+          "que nous ayons",
+          "que vous ayez",
+          "qu'ils aient / qu'elles aient"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-avoir"
+      },
+      {
+        "verb": "aller",
+        "verbRank": 24,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que j'aille",
+          "que tu ailles",
+          "qu'il aille / qu'elle aille / qu'on aille",
+          "que nous allions",
+          "que vous alliez",
+          "qu'ils aillent / qu'elles aillent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-aller"
+      },
+      {
+        "verb": "faire",
+        "verbRank": 25,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je fasse",
+          "que tu fasses",
+          "qu'il fasse / qu'elle fasse / qu'on fasse",
+          "que nous fassions",
+          "que vous fassiez",
+          "qu'ils fassent / qu'elles fassent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-faire"
+      },
+      {
+        "verb": "pouvoir",
+        "verbRank": 27,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je puisse",
+          "que tu puisses",
+          "qu'il puisse / qu'elle puisse / qu'on puisse",
+          "que nous puissions",
+          "que vous puissiez",
+          "qu'ils puissent / qu'elles puissent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-pouvoir"
+      },
+      {
+        "verb": "savoir",
+        "verbRank": 62,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je sache",
+          "que tu saches",
+          "qu'il sache / qu'elle sache / qu'on sache",
+          "que nous sachions",
+          "que vous sachiez",
+          "qu'ils sachent / qu'elles sachent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-savoir"
+      },
+      {
+        "verb": "vouloir",
+        "verbRank": 26,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je veuille",
+          "que tu veuilles",
+          "qu'il veuille / qu'elle veuille / qu'on veuille",
+          "que nous voulions",
+          "que vous vouliez",
+          "qu'ils veuillent / qu'elles veuillent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-vouloir"
+      },
+      {
+        "verb": "valoir",
+        "verbRank": 923,
+        "tense": "Subjonctif — présent",
+        "persons": [
+          "je",
+          "tu",
+          "il / elle / on",
+          "nous",
+          "vous",
+          "ils / elles"
+        ],
+        "forms": [
+          "que je vaille",
+          "que tu vailles",
+          "qu'il vaille / qu'elle vaille / qu'on vaille",
+          "que nous valions",
+          "que vous valiez",
+          "qu'ils vaillent / qu'elles vaillent"
+        ],
+        "provenance": "dist/data/verbs.json · temps · Subjonctif — présent",
+        "id": "subj-valoir"
+      }
+    ],
+    "usageGroups": [
+      {
+        "id": "will",
+        "title": "Voluntad o deseo",
+        "cue": "vouloir que · souhaiter que",
+        "rule": "Cuando quieres que otra persona haga algo, estas construcciones llevan subjuntivo.",
+        "fr": "Je veux que tu viennes avec nous.",
+        "es": "Quiero que vengas con nosotros.",
+        "note": "Con el mismo sujeto, aprende la alternativa sencilla: Je veux partir. → Quiero irme.",
+        "sourceIds": [
+          "subjVerbs"
+        ],
+        "corpusRef": {
+          "verb": "venir",
+          "verbRank": 60,
+          "tense": "Subjonctif — présent",
+          "form": "que tu viennes",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "emotion",
+        "title": "Emoción o valoración",
+        "cue": "être content que · regretter que",
+        "rule": "Una reacción afectiva lleva subjuntivo, aunque el hecho sea real.",
+        "fr": "Je suis contente que tu sois ici.",
+        "es": "Me alegro de que estés aquí.",
+        "note": "No uses «subjuntivo = algo falso» como regla. La persona puede estar realmente aquí.",
+        "sourceIds": [
+          "subjVerbs"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "form": "que tu sois",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "need",
+        "title": "Necesidad",
+        "cue": "il faut que · il est important que",
+        "rule": "Estas construcciones presentan una obligación o una necesidad y llevan subjuntivo.",
+        "fr": "Il faut que nous partions avant huit heures.",
+        "es": "Tenemos que irnos antes de las ocho.",
+        "sourceIds": [
+          "subjUses",
+          "subjVerbs"
+        ],
+        "corpusRef": {
+          "verb": "partir",
+          "verbRank": 124,
+          "tense": "Subjonctif — présent",
+          "form": "que nous partions",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "doubt",
+        "title": "Duda",
+        "cue": "douter que · ne pas être sûr que",
+        "rule": "Para expresar la duda, practica el subjuntivo después de estas construcciones.",
+        "fr": "Je doute qu’il puisse venir demain.",
+        "es": "Dudo que pueda venir mañana.",
+        "sourceIds": [
+          "subjUses"
+        ],
+        "corpusRef": {
+          "verb": "pouvoir",
+          "verbRank": 27,
+          "tense": "Subjonctif — présent",
+          "form": "qu'il puisse",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "purpose",
+        "title": "Finalidad",
+        "cue": "pour que · afin que",
+        "rule": "El resultado que buscas se expresa con subjuntivo tras pour que o afin que.",
+        "fr": "Je parle lentement pour que vous compreniez.",
+        "es": "Hablo despacio para que comprendáis.",
+        "sourceIds": [
+          "subjLinks"
+        ],
+        "corpusRef": {
+          "verb": "comprendre",
+          "verbRank": 31,
+          "tense": "Subjonctif — présent",
+          "form": "que vous compreniez",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "concession",
+        "title": "Concesión",
+        "cue": "bien que",
+        "rule": "Aprende bien que con subjuntivo para introducir una dificultad que no impide la acción.",
+        "fr": "Bien qu’elle soit fatiguée, elle vient nous aider.",
+        "es": "Aunque está cansada, viene a ayudarnos.",
+        "note": "La fatiga se admite como real: el modo depende aquí de la construcción bien que.",
+        "sourceIds": [
+          "subjLinks"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "form": "qu'elle soit",
+          "provenance": "dist/data/verbs.json"
+        }
+      }
+    ],
+    "contrasts": [
+      {
+        "id": "opinion",
+        "title": "Je pense que / Je ne pense pas que",
+        "rule": "La afirmación ordinaria usa indicativo. La negación favorece el subjuntivo para expresar duda; también hay indicativo según el sentido y el contexto.",
+        "examples": [
+          {
+            "fr": "Je pense qu’il est prêt.",
+            "es": "Creo que está preparado.",
+            "corpusRef": {
+              "verb": "être",
+              "verbRank": 2,
+              "tense": "Indicatif — présent",
+              "form": "il est",
+              "provenance": "dist/data/verbs.json"
+            }
+          },
+          {
+            "fr": "Je ne pense pas qu’il soit prêt.",
+            "es": "No creo que esté preparado.",
+            "corpusRef": {
+              "verb": "être",
+              "verbRank": 2,
+              "tense": "Subjonctif — présent",
+              "form": "qu'il soit",
+              "provenance": "dist/data/verbs.json"
+            }
+          }
+        ],
+        "note": "No corrijas automáticamente todo indicativo tras ne pas penser que. El diccionario académico admite esa variación.",
+        "sourceIds": [
+          "penserModes"
+        ]
+      },
+      {
+        "id": "hope",
+        "title": "J’espère que: cuidado con el español",
+        "rule": "En una afirmación corriente, espérer que suele llevar indicativo. Para mañana, el futuro es natural.",
+        "examples": [
+          {
+            "fr": "J’espère qu’il viendra demain.",
+            "es": "Espero que venga mañana.",
+            "corpusRef": {
+              "verb": "venir",
+              "verbRank": 60,
+              "tense": "Indicatif — futur simple",
+              "form": "il viendra",
+              "provenance": "dist/data/verbs.json"
+            }
+          }
+        ],
+        "note": "No extrapoles esta pauta sin más a las formas negativas, interrogativas o a todos los usos de espérer.",
+        "sourceIds": [
+          "espererModes"
+        ]
+      },
+      {
+        "id": "before-after",
+        "title": "Avant que / Après que",
+        "rule": "En la norma que practicamos: avant que + subjuntivo; après que + indicativo, también al hablar del futuro.",
+        "examples": [
+          {
+            "fr": "Je partirai avant qu’il parte.",
+            "es": "Me iré antes de que él se vaya.",
+            "corpusRef": {
+              "verb": "partir",
+              "verbRank": 124,
+              "tense": "Subjonctif — présent",
+              "form": "qu'il parte",
+              "provenance": "dist/data/verbs.json"
+            }
+          },
+          {
+            "fr": "Après qu’il sera parti, je fermerai la porte.",
+            "es": "Después de que se haya ido, cerraré la puerta.",
+            "corpusRef": {
+              "verb": "partir",
+              "verbRank": 124,
+              "tense": "Indicatif — futur antérieur",
+              "form": "il sera parti",
+              "provenance": "dist/data/verbs.json"
+            }
+          }
+        ],
+        "sourceIds": [
+          "beforeAfter",
+          "beforeAfterOqlf"
+        ]
+      },
+      {
+        "id": "not-every-que",
+        "title": "Que une frases; no decide solo el modo",
+        "rule": "Busca toda la construcción. Je sais que afirma un hecho; il faut que presenta una necesidad.",
+        "examples": [
+          {
+            "fr": "Je sais qu’il est ici.",
+            "es": "Sé que está aquí.",
+            "corpusRef": {
+              "verb": "être",
+              "verbRank": 2,
+              "tense": "Indicatif — présent",
+              "form": "il est",
+              "provenance": "dist/data/verbs.json"
+            }
+          },
+          {
+            "fr": "Il faut qu’il soit ici à huit heures.",
+            "es": "Tiene que estar aquí a las ocho.",
+            "corpusRef": {
+              "verb": "être",
+              "verbRank": 2,
+              "tense": "Subjonctif — présent",
+              "form": "qu'il soit",
+              "provenance": "dist/data/verbs.json"
+            }
+          }
+        ],
+        "note": "El mismo que puede ir con modos distintos. Tampoco toda frase con sentido futuro exige futur simple.",
+        "sourceIds": [
+          "subjUses",
+          "subjVerbs"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "subj-will-venir",
+        "group": "Voluntad",
+        "context": "Quieres que otra persona te acompañe.",
+        "prompt": "Je veux que tu ___ avec nous.",
+        "options": [
+          {
+            "id": "0",
+            "text": "viens"
+          },
+          {
+            "id": "1",
+            "text": "viennes"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je veux que tu viennes avec nous.",
+        "modelES": "Quiero que vengas con nosotros.",
+        "explanation": "Vouloir que pide aquí subjuntivo; venir usa vienn- en tu.",
+        "sourceIds": [
+          "subjVerbs",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "venir",
+          "verbRank": 60,
+          "tense": "Subjonctif — présent",
+          "form": "que tu viennes",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-need-partir",
+        "group": "Necesidad",
+        "context": "El grupo debe salir temprano.",
+        "prompt": "Il faut que nous ___ avant huit heures.",
+        "options": [
+          {
+            "id": "0",
+            "text": "partions"
+          },
+          {
+            "id": "1",
+            "text": "partons"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Il faut que nous partions avant huit heures.",
+        "modelES": "Tenemos que irnos antes de las ocho.",
+        "explanation": "Il faut que lleva subjuntivo; nous partons da part- + ions.",
+        "sourceIds": [
+          "subjUses",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "partir",
+          "verbRank": 124,
+          "tense": "Subjonctif — présent",
+          "form": "que nous partions",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-emotion-etre",
+        "group": "Emoción",
+        "context": "La persona está aquí y te alegras.",
+        "prompt": "Je suis contente que tu ___ ici.",
+        "options": [
+          {
+            "id": "0",
+            "text": "es"
+          },
+          {
+            "id": "1",
+            "text": "sois"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je suis contente que tu sois ici.",
+        "modelES": "Me alegro de que estés aquí.",
+        "explanation": "La emoción lleva subjuntivo aunque el hecho sea real: que tu sois.",
+        "sourceIds": [
+          "subjVerbs"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "form": "que tu sois",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-doubt-pouvoir",
+        "group": "Duda",
+        "context": "No confías en que pueda venir.",
+        "prompt": "Je doute qu’il ___ venir demain.",
+        "options": [
+          {
+            "id": "0",
+            "text": "puisse"
+          },
+          {
+            "id": "1",
+            "text": "peut"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Je doute qu’il puisse venir demain.",
+        "modelES": "Dudo que pueda venir mañana.",
+        "explanation": "Douter que lleva subjuntivo; pouvoir usa la raíz puiss-.",
+        "sourceIds": [
+          "subjUses",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "pouvoir",
+          "verbRank": 27,
+          "tense": "Subjonctif — présent",
+          "form": "qu'il puisse",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-purpose-comprendre",
+        "group": "Finalidad",
+        "context": "Hablas despacio con un objetivo.",
+        "prompt": "Je parle lentement pour que vous ___.",
+        "options": [
+          {
+            "id": "0",
+            "text": "comprenez"
+          },
+          {
+            "id": "1",
+            "text": "compreniez"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je parle lentement pour que vous compreniez.",
+        "modelES": "Hablo despacio para que comprendáis.",
+        "explanation": "Pour que expresa finalidad y lleva subjuntivo: compren- + iez.",
+        "sourceIds": [
+          "subjLinks"
+        ],
+        "corpusRef": {
+          "verb": "comprendre",
+          "verbRank": 31,
+          "tense": "Subjonctif — présent",
+          "form": "que vous compreniez",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-concession-etre",
+        "group": "Concesión",
+        "context": "Reconoces su cansancio; viene de todos modos.",
+        "prompt": "Bien qu’elle ___ fatiguée, elle vient nous aider.",
+        "options": [
+          {
+            "id": "0",
+            "text": "soit"
+          },
+          {
+            "id": "1",
+            "text": "est"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Bien qu’elle soit fatiguée, elle vient nous aider.",
+        "modelES": "Aunque está cansada, viene a ayudarnos.",
+        "explanation": "Bien que se practica con subjuntivo en la norma habitual. El hecho puede ser real.",
+        "sourceIds": [
+          "subjLinks"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "form": "qu'elle soit",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-opinion-positive",
+        "group": "Opinión afirmativa",
+        "context": "Presentas tu opinión como una afirmación corriente.",
+        "prompt": "Je pense qu’il ___ prêt.",
+        "options": [
+          {
+            "id": "0",
+            "text": "est"
+          },
+          {
+            "id": "1",
+            "text": "soit"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Je pense qu’il est prêt.",
+        "modelES": "Creo que está preparado.",
+        "explanation": "Je pense que afirmativo se construye aquí con indicativo. Que no impone subjuntivo.",
+        "sourceIds": [
+          "penserModes"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Indicatif — présent",
+          "form": "il est",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-opinion-negative",
+        "group": "Opinión negativa",
+        "context": "Elige el subjuntivo para formular la duda.",
+        "prompt": "Je ne pense pas qu’il ___ prêt.",
+        "options": [
+          {
+            "id": "0",
+            "text": "est"
+          },
+          {
+            "id": "1",
+            "text": "soit"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je ne pense pas qu’il soit prêt.",
+        "modelES": "No creo que esté preparado.",
+        "explanation": "Para la duda solicitada, elige soit. También existe el indicativo tras ne pas penser que según el contexto: no es una prohibición absoluta.",
+        "sourceIds": [
+          "penserModes"
+        ],
+        "corpusRef": {
+          "verb": "être",
+          "verbRank": 2,
+          "tense": "Subjonctif — présent",
+          "form": "qu'il soit",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-hope-future",
+        "group": "Esperanza",
+        "context": "Expresas una esperanza para mañana en una afirmación corriente.",
+        "prompt": "J’espère qu’il ___ demain.",
+        "options": [
+          {
+            "id": "0",
+            "text": "viendra"
+          },
+          {
+            "id": "1",
+            "text": "vienne"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "J’espère qu’il viendra demain.",
+        "modelES": "Espero que venga mañana.",
+        "explanation": "Espérer afirmativo suele llevar indicativo; aquí, futur simple. No copies automáticamente el subjuntivo español.",
+        "sourceIds": [
+          "espererModes"
+        ],
+        "corpusRef": {
+          "verb": "venir",
+          "verbRank": 60,
+          "tense": "Indicatif — futur simple",
+          "form": "il viendra",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-before",
+        "group": "Antes de",
+        "context": "Tu salida será anterior a la suya.",
+        "prompt": "Je partirai avant qu’il ___.",
+        "options": [
+          {
+            "id": "0",
+            "text": "partira"
+          },
+          {
+            "id": "1",
+            "text": "parte"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je partirai avant qu’il parte.",
+        "modelES": "Me iré antes de que él se vaya.",
+        "explanation": "Avant que lleva subjuntivo; parte puede referirse al futuro.",
+        "sourceIds": [
+          "beforeAfter"
+        ],
+        "corpusRef": {
+          "verb": "partir",
+          "verbRank": 124,
+          "tense": "Subjonctif — présent",
+          "form": "qu'il parte",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-after",
+        "group": "Después de",
+        "context": "Cerrarás la puerta después de su salida futura.",
+        "prompt": "Après qu’il ___, je fermerai la porte.",
+        "options": [
+          {
+            "id": "0",
+            "text": "soit parti"
+          },
+          {
+            "id": "1",
+            "text": "sera parti"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Après qu’il sera parti, je fermerai la porte.",
+        "modelES": "Después de que se haya ido, cerraré la puerta.",
+        "explanation": "Après que lleva indicativo en la norma practicada. Sera parti es futur antérieur: la salida estará cumplida.",
+        "sourceIds": [
+          "beforeAfter",
+          "beforeAfterOqlf"
+        ],
+        "corpusRef": {
+          "verb": "partir",
+          "verbRank": 124,
+          "tense": "Indicatif — futur antérieur",
+          "form": "il sera parti",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-past-fini",
+        "group": "Acción anterior",
+        "context": "Ya has terminado el trabajo y eso me alegra.",
+        "prompt": "Je suis content que tu ___ le travail.",
+        "options": [
+          {
+            "id": "0",
+            "text": "aies fini"
+          },
+          {
+            "id": "1",
+            "text": "finisses"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Je suis content que tu aies fini le travail.",
+        "modelES": "Me alegro de que hayas terminado el trabajo.",
+        "explanation": "El trabajo ya está terminado en este contexto: passé du subjonctif, avoir en subjuntivo + fini.",
+        "sourceIds": [
+          "subjSequence",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "finir",
+          "verbRank": 191,
+          "tense": "Subjonctif — passé",
+          "form": "que tu aies fini",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-past-arrivees",
+        "group": "Pasado y concordancia",
+        "context": "Ellas ya han llegado; te alegras de ello.",
+        "prompt": "Je suis heureux qu’elles ___ à l’heure.",
+        "options": [
+          {
+            "id": "0",
+            "text": "sont arrivées"
+          },
+          {
+            "id": "1",
+            "text": "soient arrivées"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je suis heureux qu’elles soient arrivées à l’heure.",
+        "modelES": "Me alegro de que hayan llegado a la hora.",
+        "explanation": "Emoción + acción anterior: passé du subjonctif. Arriver usa être y elles exige arrivées.",
+        "sourceIds": [
+          "subjVerbs",
+          "subjForms",
+          "subjSequence"
+        ],
+        "corpusRef": {
+          "verb": "arriver",
+          "verbRank": 119,
+          "tense": "Subjonctif — passé",
+          "form": "qu'elles soient arrivées",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-two-stems-boire",
+        "group": "La raíz de nous",
+        "context": "Es necesario beber agua.",
+        "prompt": "Il faut que nous ___ de l’eau.",
+        "options": [
+          {
+            "id": "0",
+            "text": "buvions"
+          },
+          {
+            "id": "1",
+            "text": "boivions"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Il faut que nous buvions de l’eau.",
+        "modelES": "Tenemos que beber agua.",
+        "explanation": "Nous buvons da buv- para nous/vous: buv- + ions. Ils boivent da boiv- para las otras personas.",
+        "sourceIds": [
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "boire",
+          "verbRank": 143,
+          "tense": "Subjonctif — présent",
+          "form": "que nous buvions",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-irregular-savoir",
+        "group": "Irregular: savoir",
+        "context": "Presentas la información como importante.",
+        "prompt": "Il est important que vous ___ la vérité.",
+        "options": [
+          {
+            "id": "0",
+            "text": "sachiez"
+          },
+          {
+            "id": "1",
+            "text": "savez"
+          }
+        ],
+        "correctId": "0",
+        "modelFR": "Il est important que vous sachiez la vérité.",
+        "modelES": "Es importante que sepáis la verdad.",
+        "explanation": "Il est important que lleva subjuntivo; savoir usa sach- + iez.",
+        "sourceIds": [
+          "subjVerbs",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "savoir",
+          "verbRank": 62,
+          "tense": "Subjonctif — présent",
+          "form": "que vous sachiez",
+          "provenance": "dist/data/verbs.json"
+        }
+      },
+      {
+        "id": "subj-irregular-faire",
+        "group": "Irregular: faire",
+        "context": "Quieres que otra persona haga una pausa.",
+        "prompt": "Je veux que tu ___ une pause.",
+        "options": [
+          {
+            "id": "0",
+            "text": "fais"
+          },
+          {
+            "id": "1",
+            "text": "fasses"
+          }
+        ],
+        "correctId": "1",
+        "modelFR": "Je veux que tu fasses une pause.",
+        "modelES": "Quiero que hagas una pausa.",
+        "explanation": "Vouloir que lleva subjuntivo; faire usa fass- + es.",
+        "sourceIds": [
+          "subjVerbs",
+          "subjForms"
+        ],
+        "corpusRef": {
+          "verb": "faire",
+          "verbRank": 25,
+          "tense": "Subjonctif — présent",
+          "form": "que tu fasses",
+          "provenance": "dist/data/verbs.json"
+        }
+      }
+    ],
+    "implementationNotes": [
+      "Las opciones y el contexto son visibles antes de responder. Mostrar modelFR, modelES, explanation y corpusRef sólo después de un intento o de una acción explícita de revelar tras el intento.",
+      "El caso subj-opinion-negative solicita expresamente el subjuntivo: no usar su resultado para declarar incorrecto todo indicativo tras je ne pense pas que.",
+      "Los enlaces de audio de corpusRef reproducen una forma conjugada exacta del corpus; no afirmar que son el audio de toda la frase original.",
+      "La doble raíz es una estrategia pedagógica verificada por comparación con las tablas del corpus, no una cita literal ni una regla universal atribuida al OQLF.",
+      "Las tablas incorporan todas las variantes existentes con género y número; conservarlas y dividir únicamente por el separador explícito / al ofrecer audio individual."
+    ]
+  }
 }
