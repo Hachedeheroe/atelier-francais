@@ -2,20 +2,25 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#2945bd"><meta name="description" content="Juegos visuales de francés con tus audios: mercado, parejas, frases hechas y verbos. Retos diarios, puntos y medallas a tu ritmo.">
-<title>Atelier français · Aprende con tus sentidos</title>
+<meta name="theme-color" content="#294e60"><meta name="description" content="Tu biblioteca de francés: conjugaciones con audio, formación verbal en 3D, vocabulario visual y repaso lingüístico de A1 a C2.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Atelier">
+<link rel="apple-touch-icon" href="illustrations/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<title>Atelier français · Voir, écouter, pratiquer</title>
 <link rel="icon" href="illustrations/fleur.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="games.css">
-<link rel="stylesheet" href="adventure.css">
+<link rel="stylesheet" href="style.css?v=7dff278f9599">
+<link rel="stylesheet" href="games.css?v=8cc6e59dba80">
+<link rel="stylesheet" href="adventure.css?v=ae957b2472a8">
 <link rel="stylesheet" href="verb-game.css?v=7833f827b871">
-<link rel="stylesheet" href="rewards.css">
-<link rel="stylesheet" href="playful.css">
-<link rel="stylesheet" href="color.css">
-<link rel="stylesheet" href="color-games.css">
-<link rel="stylesheet" href="photos.css">
-<link rel="stylesheet" href="mission-verbs.css">
+<link rel="stylesheet" href="rewards.css?v=c08f463de145">
+<link rel="stylesheet" href="photos.css?v=9446134a1bf1">
+<link rel="stylesheet" href="mission-verbs.css?v=d6dbca1887a4">
 <link rel="stylesheet" href="verb-tips.css?v=f927e4edabb7">
+<link rel="stylesheet" href="verb-lessons.css?v=c4a1cb4e2d06">
+<link rel="stylesheet" href="exam-review.css?v=356e6e4d9f7b">
+<link rel="stylesheet" href="serious.css?v=499da70e8057">
 </head>
 <body>
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -23,18 +28,38 @@
 <div id="live" class="sr-only" aria-live="polite"></div>
 <div id="toast" role="status"></div>
 <audio id="player" preload="none"></audio>
-<script src="data/library.js"></script>
-<script src="data/audio-texts.js"></script>
-<script src="data/expressions.js"></script>
-<script src="data/pictures.js"></script>
-<script src="visuals.js"></script>
-<script src="rewards.js"></script>
-<script src="games.js"></script>
-<script src="adventure.js"></script>
+<script src="data/library.js?v=208dd147573f"></script>
+<script src="data/audio-texts.js?v=670504650c92"></script>
+<script src="data/expressions.js?v=fad95fae4fb5"></script>
+<script src="data/pictures.js?v=9c5faa2f5ef0"></script>
+<script src="data/catalog-images.js?v=6a47949d1f25"></script>
+<script src="visuals.js?v=f892cfa4dcc0"></script>
+<script src="rewards.js?v=25097bcbbe27"></script>
+<script src="games.js?v=3d4933de0577"></script>
+<script src="adventure.js?v=e2f23743f04d"></script>
+<script src="data/conjugation-audio.js?v=1269a55657e8"></script>
+<script src="conjugation-audio.js?v=f382fd13d100"></script>
+<script src="data/locution-review.js?v=94704d6b1aa4"></script>
+<script src="data/vocabulary-review.js?v=3aade18f5646"></script>
 <script src="data/verb-tips.js?v=44f9e4bedeae"></script>
-<script src="verb-tips.js?v=06bf45a258aa"></script>
-<script src="verb-game.js?v=ba177838fb1a"></script>
-<script src="data/verb-missions.js"></script>
-<script src="mission-verbs.js"></script>
-<script src="app.js?v=fae8ff04042b"></script>
+<script src="verb-tips.js?v=a2239fab85ee"></script>
+<script src="verb-game.js?v=3ec6416d9463"></script>
+<script src="data/verb-missions.js?v=8342d99b5965"></script>
+<script src="mission-verbs.js?v=f91ce5aa5431"></script>
+<script src="data/verb-lessons.js?v=3fb2d22962a8"></script>
+<script src="verb-lessons.js?v=e5f03bae6c68"></script>
+<script src="data/exam-review.js?v=3b67a644b64d"></script>
+<script src="exam-review.js?v=56d25145fde2"></script>
+<script src="app.js?v=17964d7e7e33"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').then((reg) => {
+      console.log('Atelier PWA offline activo:', reg.scope);
+    }).catch((err) => {
+      console.warn('ServiceWorker error:', err);
+    });
+  });
+}
+</script>
 </body></html>

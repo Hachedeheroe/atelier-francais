@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-20T09:12:40.611536+00:00",
+  "complete": true,
+  "vocabularyImages": {
+    "included": 3000,
+    "target": 3000,
+    "complete": true
+  },
+  "conjugationAudio": {
+    "included": 89735,
+    "target": 89735,
+    "complete": true
+  },
+  "verbAnimations": {
+    "included": 6,
+    "target": 6
+  },
+  "reviewExercises": {
+    "included": 76,
+    "target": 76
+  },
+  "verificationLimits": [
+    "Synthetic French audio; no complete human acoustic review.",
+    "No real microphone recording was made during browser QA.",
+    "Direct file opening could not be tested in the integrated browser."
+  ]
+}

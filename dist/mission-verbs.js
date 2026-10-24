@@ -16,7 +16,7 @@
   ];
   const types = ['listen','choose','build','listen','choose','write'];
   const labels = {listen:'Escucha y encuentra', choose:'Completa la acción', build:'Construye la frase', write:'Tu turno de escribir'};
-  const callbacks = {render(){}, play(){}, onResult(){}, toast(){}, back(){}, openCard(){}};
+  const callbacks = {render(){}, play(){}, onResult(){}, onMistake(){}, toast(){}, back(){}, openCard(){}};
   const state = {active:false, round:null};
   let counter = 0;
   const button = (action, text, extra = '', kind = '') => `<button type="button" class="mv-button ${kind}" data-mission-action="${action}" ${extra}>${text}</button>`;
@@ -68,6 +68,7 @@
     state.round = {runId:`verb-missions-${Date.now().toString(36)}-${++counter}-${Math.random().toString(36).slice(2,8)}`, questions:selected.map(seed => makeQuestion(seed.item,seed.type)), index:0, results:[], answer:'', selectedTokens:[], wrong:false, helped:false, tip:false, model:false, answered:false, feedback:'', feedbackKind:'', choice:'', done:false, emitted:false, review};
     refresh('mv-task-title'); top();
     if (active()?.type === 'listen') callbacks.play(active().item.audio);
+    else if (active()?.item?.verb) void window.ATELIER_CONJUGATION_AUDIO?.listen?.(active().item.verb);
   }
   function start() { state.active = true; state.round = null; refresh(); }
   function leave() { state.active = false; state.round = null; }
@@ -93,17 +94,35 @@
     const round=state.round, question=active(), item=question.item, place=places.find(value=>value.id===item.location)||places[0];
     return `<section class="mv-page mv-round">${roundTop(round)}<div class="mv-task"><div class="mv-task-heading"><div><div class="eyebrow" lang="fr">${esc(place.fr)} · MISSION ${round.index+1}</div><h1 id="mv-task-title" tabindex="-1">${labels[question.type]}</h1></div><span class="mv-type-icon" aria-hidden="true">${{listen:'♫',choose:'✦',build:'▦',write:'✎'}[question.type]}</span></div>${questionContent(question,round)}${round.tip&&question.type!=='listen'?contextualTip(item):''}<div class="mv-feedback ${round.feedbackKind?'is-'+round.feedbackKind:''}" role="status" aria-live="polite">${esc(round.feedback)}</div>${round.answered?`<div class="mv-solution"><div><strong lang="fr">${esc(item.phrase)}</strong><span>${esc(item.phraseTranslation)}</span></div>${button('audio','▶ Escuchar','','mv-secondary')}${button('card','Ver mi ficha','','mv-link')}</div>`:''}<div class="mv-actions mv-footer">${round.answered?button('next',`${round.index+1===round.questions.length?'Ver mi pasaporte':'Siguiente parada'} ${arrow}`,'id="mv-next"','mv-primary'):`${question.type!=='listen'?button('tip','Ver un truco','','mv-secondary'):''}${button('hint','Ver modelo','','mv-secondary')}${button('skip','Ver solución y continuar','','mv-link')}`}</div></div>${cityMap(round)}<p class="mv-source-note">Los errores y las pistas se guardan para la segunda vuelta. Completa el recorrido para registrar el resultado.</p></section>`;
   }
+  function emitMissionMistake(question, reason) {
+    if (!question?.item) return;
+    const item = question.item;
+    callbacks.onMistake?.({
+      id: sourceId(item),
+      kind: 'verb-mission',
+      title: `${item.verb} — ${item.phrase}`,
+      subtitle: `${item.phraseTranslation || item.translation || ''} · Misión verbos`,
+      detail: item.phrase,
+      explanation: `Verbo: ${item.verb} (${item.translation || ''}) · Forma: ${item.answerBody || ''}`,
+      verb: item.verb,
+      audio: item.audio,
+      reason
+    });
+  }
   function complete(clean, skipped=false) {
     const round=state.round, question=active();
     if (!round || !question || round.answered || round.done) return;
+    if (skipped) emitMissionMistake(question, 'skip');
     round.answered=true;
     round.results.push({id:sourceId(question.item), clean, missed:round.wrong||skipped, assisted:round.helped, skipped});
     round.feedbackKind=skipped?'notice':'correct';
     round.feedback=skipped?'Mira la solución. Esta acción te espera en la segunda vuelta.':clean?'¡Sello conseguido! +12 monedas. Lo has recordado a la primera.':'¡Ahora sí! +2 monedas. Lo practicaremos una vez más.';
     refresh('mv-next');
+    if (question.item?.audio) callbacks.play(question.item.audio);
   }
   function wrong(message) {
     const round=state.round;if(!round||round.answered||round.done)return;
+    emitMissionMistake(active(), 'wrong');
     round.wrong=true;round.feedbackKind='wrong';round.feedback=message||'Todavía no. Prueba otra vez: puedes repetir el audio o pedir una pista.';refresh(active()?.type==='write'?'mv-answer':undefined);
   }
   function check() {
@@ -116,11 +135,13 @@
   }
   function hint() {
     const round=state.round;if(!round||round.answered||round.done)return;
+    emitMissionMistake(active(), 'hint');
     round.helped=true;round.model=true;round.feedbackKind='notice';round.feedback='Modelo abierto. Recupera esta frase después en la segunda vuelta.';refresh(active()?.type==='write'?'mv-answer':undefined);
   }
   function tip() {
     const round=state.round, question=active();
     if(!round||!question||round.answered||round.done||question.type==='listen')return;
+    emitMissionMistake(question, 'tip');
     round.helped=true;round.tip=true;round.feedbackKind='notice';
     round.feedback='Truco abierto. Aplica la regla; esta acción volverá en la segunda vuelta.';
     refresh(question.type==='write'?'mv-answer':undefined);
@@ -134,7 +155,9 @@
     const round=state.round;if(!round||!round.answered||round.done)return;
     if(round.index+1===round.questions.length){finish();refresh('mv-result-title');top();return;}
     round.index++;Object.assign(round,{answer:'',selectedTokens:[],wrong:false,helped:false,tip:false,model:false,answered:false,feedback:'',feedbackKind:'',choice:''});
-    refresh(active().type==='write'?'mv-answer':'mv-task-title');top();if(active().type==='listen')callbacks.play(active().item.audio);
+    refresh(active().type==='write'?'mv-answer':'mv-task-title');top();
+    if(active().type==='listen')callbacks.play(active().item.audio);
+    else if(active()?.item?.verb)void window.ATELIER_CONJUGATION_AUDIO?.listen?.(active().item.verb);
   }
   function results() {
     const round=state.round, clean=round.results.filter(result=>result.clean).length, pending=round.results.filter(result=>!result.clean).length, stars=clean===round.questions.length?3:clean>=Math.ceil(round.questions.length/2)?2:1;

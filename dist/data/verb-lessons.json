@@ -1,0 +1,152 @@
+{
+  "lessons": [
+    {
+      "id": "present-er",
+      "title": "Presente: raíz y terminaciones",
+      "description": "Separa parl- de sus finales y compara las formas escritas que suenan igual.",
+      "cardId": "present-er",
+      "video": "media/verb-lessons/present-er.mp4",
+      "poster": "media/verb-lessons/present-er.jpg",
+      "captions": "media/verb-lessons/present-er.vtt",
+      "duration": 32,
+      "forms": [
+        "je parle",
+        "tu parles",
+        "il parle",
+        "nous parlons",
+        "vous parlez",
+        "ils parlent"
+      ],
+      "exercise": {
+        "prompt": "Completa sin mirar: nous parl___ / vous parl___ / ils parl___",
+        "answer": "nous parlons / vous parlez / ils parlent",
+        "explanation": "Parler conserva la raíz parl-. En estas personas añade -ons, -ez y -ent. La terminación -ent no se pronuncia aquí."
+      }
+    },
+    {
+      "id": "finir-iss",
+      "title": "Finir: el puente -iss-",
+      "description": "Visualiza cómo crece la raíz en las formas del plural de la familia finir.",
+      "cardId": "present-finir",
+      "video": "media/verb-lessons/finir-iss.mp4",
+      "poster": "media/verb-lessons/finir-iss.jpg",
+      "captions": "media/verb-lessons/finir-iss.vtt",
+      "duration": 32,
+      "forms": [
+        "je finis",
+        "tu finis",
+        "il finit",
+        "nous finissons",
+        "vous finissez",
+        "ils finissent"
+      ],
+      "exercise": {
+        "prompt": "Transforma «je finis» para nous, vous e ils.",
+        "answer": "nous finissons / vous finissez / ils finissent",
+        "explanation": "Finir incorpora -iss- antes de -ons, -ez y -ent. No apliques este patrón a todos los infinitivos en -ir: partir y dormir siguen otros modelos."
+      }
+    },
+    {
+      "id": "imparfait-nous",
+      "title": "Imparfait: parte de nous",
+      "description": "Quita -ons de nous parlons y ensambla las seis formas del imparfait.",
+      "cardId": "imparfait",
+      "video": "media/verb-lessons/imparfait-nous.mp4",
+      "poster": "media/verb-lessons/imparfait-nous.jpg",
+      "captions": "media/verb-lessons/imparfait-nous.vtt",
+      "duration": 32,
+      "forms": [
+        "je parlais",
+        "tu parlais",
+        "il parlait",
+        "nous parlions",
+        "vous parliez",
+        "ils parlaient"
+      ],
+      "exercise": {
+        "prompt": "Desde nous parlons, forma el imparfait con je y nous. Después prueba con être.",
+        "answer": "je parlais / nous parlions / j’étais / nous étions",
+        "explanation": "Parlons sin -ons da parl-. Añade -ais o -ions. Être es la excepción: su raíz es ét-."
+      }
+    },
+    {
+      "id": "futur-conditionnel",
+      "title": "Futuro y condicional: una base común",
+      "description": "Compara parlerai/parlerais y parlerons/parlerions con dos juegos de finales.",
+      "cardId": "future",
+      "video": "media/verb-lessons/futur-conditionnel.mp4",
+      "poster": "media/verb-lessons/futur-conditionnel.jpg",
+      "captions": "media/verb-lessons/futur-conditionnel.vtt",
+      "duration": 32,
+      "forms": [
+        "je parlerai",
+        "je parlerais",
+        "nous parlerons",
+        "nous parlerions"
+      ],
+      "exercise": {
+        "prompt": "Completa: Demain, nous ___ de ce projet. Avec plus de temps, nous en ___ davantage. (parler)",
+        "answer": "Demain, nous parlerons de ce projet. Avec plus de temps, nous en parlerions davantage.",
+        "explanation": "El futuro parlerons anuncia lo que ocurrirá; el condicional parlerions presenta una posibilidad sujeta a una condición. Ambos usan la base parler-."
+      }
+    },
+    {
+      "id": "passe-compose-accord",
+      "title": "Passé composé: auxiliar y acuerdo",
+      "description": "Ensambla auxiliar y participio; con arriver distingue los cuatro acuerdos escritos.",
+      "cardId": "passe-compose",
+      "video": "media/verb-lessons/passe-compose-accord.mp4",
+      "poster": "media/verb-lessons/passe-compose-accord.jpg",
+      "captions": "media/verb-lessons/passe-compose-accord.vtt",
+      "duration": 32,
+      "forms": [
+        "j’ai parlé",
+        "il est arrivé",
+        "elle est arrivée",
+        "ils sont arrivés",
+        "elles sont arrivées"
+      ],
+      "exercise": {
+        "prompt": "Transforma «il est arrivé» para elle, ils y elles.",
+        "answer": "elle est arrivée / ils sont arrivés / elles sont arrivées",
+        "explanation": "Arriver se conjuga aquí con être. El participio concuerda con el sujeto: -e en femenino, -s en plural y -es en femenino plural. Los pronominales y el acuerdo con avoir requieren sus propias reglas."
+      }
+    },
+    {
+      "id": "irreguliers-ancrages",
+      "title": "Irregulares: tres anclas",
+      "description": "Escucha je, nous e ils de prendre y aller y observa sus cambios de raíz.",
+      "cardId": "present-anchors",
+      "video": "media/verb-lessons/irreguliers-ancrages.mp4",
+      "poster": "media/verb-lessons/irreguliers-ancrages.jpg",
+      "captions": "media/verb-lessons/irreguliers-ancrages.vtt",
+      "duration": 32,
+      "forms": [
+        "je prends",
+        "nous prenons",
+        "ils prennent",
+        "je vais",
+        "nous allons",
+        "ils vont"
+      ],
+      "exercise": {
+        "prompt": "Recupera las tres anclas je → nous → ils de prendre y aller.",
+        "answer": "je prends → nous prenons → ils prennent; je vais → nous allons → ils vont",
+        "explanation": "Estas anclas ayudan a recordar cambios de raíz, pero no generan toda la tabla. Comprueba siempre las otras personas, especialmente vous en verbos como faire y dire."
+      }
+    }
+  ],
+  "meta": {
+    "engine": "ManimGL 1.7.2",
+    "engineRevision": "c5e23d93659d604ff495ffe300bf7d4ef890e538",
+    "voice": "fr-FR-DeniseNeural",
+    "speechProvider": "Microsoft Edge Read Aloud via edge-tts",
+    "language": "fr-FR",
+    "captionLanguage": "es",
+    "resolution": "1920×1080",
+    "fps": 30,
+    "note": "Voz sintética. Pausa y repite a tu ritmo; las animaciones no evalúan tu pronunciación.",
+    "totalDuration": 192,
+    "concurrentRenders": 1
+  }
+}

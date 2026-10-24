@@ -26,3 +26,6 @@ auditoria/
 vistas/
 snapshots/
 atelier-progreso-*.json
+
+# macOS metadata on external drives
+._*

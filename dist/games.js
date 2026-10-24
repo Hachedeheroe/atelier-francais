@@ -27,7 +27,7 @@
   const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name] || paths.sound}</svg>`;
   const action = (name, label, extra = '', className = 'gm-button') => `<button type="button" class="${className}" data-game-action="${name}" ${extra}>${label}</button>`;
   const state = {filters: {level: '', group: '', category: '', kind: ''}, round: null, catalog: false, clock: false};
-  const callbacks = {render() {}, play() {}, toast() {}, onResult() {}, open() {}};
+  const callbacks = {render() {}, play() {}, toast() {}, onResult() {}, onMistake() {}, open() {}};
   let timer = null;
 
   function allRows() {
@@ -178,10 +178,26 @@
     if (type !== 'memory') play(questions[0].row);
   }
   function current() { return state.round?.questions[state.round.index]; }
+  function emitExpressionMistake(row, reason = 'wrong') {
+    if (!row) return;
+    callbacks.onMistake?.({
+      id: row.id,
+      kind: 'expression',
+      title: row.fr,
+      subtitle: `${row.es} · Expresiones (${row.level || 'General'})`,
+      detail: row.fr,
+      explanation: `${row.es}${row.situation ? ' · ' + row.situation : ''}`,
+      audio: row.audio,
+      level: row.level,
+      reason
+    });
+  }
   function rememberAnswer(ok) {
     const round = state.round;
     if (!round || round.answered || round.done) return;
-    round.results.push({id:current().row.id, ok:Boolean(ok), assisted:round.hint});
+    const row = current().row;
+    if (!ok || round.hint) emitExpressionMistake(row, !ok ? 'wrong' : 'hint');
+    round.results.push({id:row.id, ok:Boolean(ok), assisted:round.hint});
     round.answered = true;
     round.feedbackKind = ok ? 'correct' : 'wrong';
     round.feedback = ok ? (round.hint ? 'Correcto con ayuda. Esta frase irá al repaso.' : '¡Bien! Lo has reconocido sin ayuda.') : 'Esta vez no. Escucha el modelo y guarda la frase para el repaso.';

@@ -1,0 +1,22 @@
+{
+  "name": "Atelier français",
+  "short_name": "Atelier",
+  "description": "Tu biblioteca y juegos de francés con audio, verbos y repaso de errores",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f6f1e7",
+  "theme_color": "#191816",
+  "icons": [
+    {
+      "src": "illustrations/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "illustrations/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

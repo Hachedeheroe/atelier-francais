@@ -36,14 +36,41 @@
   };
   const common = new Set(['être','avoir','aller','faire','dire','pouvoir','vouloir','savoir','voir','venir','prendre','mettre','parler','aimer','manger','finir','partir','sortir','lire','écrire','comprendre','devoir','s\'amuser','se souvenir']);
   const subjects = ['je','tu','il','elle','on','nous','vous','ils','elles'];
-  const callbacks = {render() {}, play() {}, toast() {}, onResult() {}, back() {}};
-  const state = {verb:'common', tense:tenseNames[0], round:null, loading:false, loadError:false, active:false, generation:0};
+  const callbacks = {render() {}, play() {}, toast() {}, onResult() {}, onMistake() {}, onRecover() {}, getMistakes() { return []; }, back() {}};
+  const state = {verb:'common', tense:tenseNames[0], round:null, loading:false, loadError:false, active:false, generation:0, autoSpeak:true};
   let loadingPromise = null;
   let runCounter = 0;
   const button = (action, text, extra = '', klass = 'vg-button') => `<button type="button" class="${klass}" data-verb-game-action="${action}" ${extra}>${text}</button>`;
   const arrow = '<span aria-hidden="true">→</span>';
 
   function library() { return Array.isArray(window.ATELIER_VERBS) ? window.ATELIER_VERBS : []; }
+  function verbGroupsApi() { return window.ATELIER_VERB_GROUPS || null; }
+  function classifyVerbFallback(verb) {
+    const api = verbGroupsApi();
+    if (api?.classify) return api.classify(verb);
+    const inf = canonical(verb?.verbe || verb || '').replace(/^(se |s')/u, '');
+    if (['être','avoir','aller','faire'].includes(inf) || inf.endsWith('oir')) return {id:'oir-piliers', code:'-oir + pilares', badge:'Pilares e irregulares · -oir', short:'-oir y grandes pilares'};
+    if (inf.endsWith('er')) return {id:'er-regular', code:'-er', badge:'1.er grupo · -er', short:'-er (parler)'};
+    if (inf.endsWith('ir')) {
+      const nous = canonical(verb?.formes?.['Indicatif — présent']?.[3]?.[0] || '');
+      if (nous.endsWith('issons')) return {id:'ir-issant', code:'-ir · -issant', badge:'2.º grupo · -ir (-issant)', short:'-ir con -issant'};
+      if (/(venir|tenir)$/u.test(inf)) return {id:'ir-venir', code:'-venir / -tenir', badge:'3.er grupo · -venir/-tenir', short:'-venir / -tenir'};
+      if (/(vrir|frir|cueillir)$/u.test(inf)) return {id:'ir-ouvrir', code:'-ir → -e', badge:'3.er grupo · -ir como -er', short:'-ir tipo ouvrir'};
+      return {id:'ir-partir', code:'-ir · partir', badge:'3.er grupo · -ir sin -issant', short:'-ir tipo partir/dormir'};
+    }
+    if (inf.endsWith('dre')) {
+      if (inf.endsWith('prendre')) return {id:'dre-prendre', code:'-prendre', badge:'3.er grupo · -prendre', short:'Familia -prendre'};
+      if (/(aindre|eindre|oindre)$/u.test(inf)) return {id:'dre-indre', code:'-indre → -gn-', badge:'3.er grupo · -indre (-gn-)', short:'-aindre / -eindre / -oindre'};
+      return {id:'dre-vendre', code:'-dre', badge:'3.er grupo · -dre (vendre)', short:'-dre regulares (vendre)'};
+    }
+    return {id:'re-autres', code:'-re', badge:'3.er grupo · otros -re', short:'Otros -re'};
+  }
+  function matchesVerbGroup(verb, groupId) {
+    const api = verbGroupsApi();
+    if (api?.matches) return api.matches(verb, groupId);
+    if (groupId === 'pronominal') return Boolean(verb?.pronominal || /^(se |s')/u.test(canonical(verb?.verbe || '')));
+    return classifyVerbFallback(verb).id === groupId;
+  }
   function refresh(focus) {
     callbacks.render();
     if (focus && typeof document !== 'undefined') document.getElementById(focus)?.focus({preventScroll:true});
@@ -83,7 +110,19 @@
   function selectedTenses() { return tenseMixes[state.tense]?.tenses || (tenseNames.includes(state.tense)?[state.tense]:[]); }
   function pool() {
     const tenses = selectedTenses();
-    const verbs = library().filter(verb => state.verb === 'all' || (state.verb === 'common' ? common.has(verb.verbe) : verb.verbe === state.verb));
+    const allVerbs = library();
+    if (state.verb === 'mistakes') {
+      const saved = callbacks.getMistakes?.() || [];
+      const exactIds = new Set(saved.filter(m => typeof m?.id === 'string' && m.id.startsWith('verb|')).map(m => m.id));
+      const mistakeVerbs = new Set(saved.map(m => m?.verb || (typeof m?.id === 'string' && m.id.startsWith('verb|') ? m.id.split('|')[1] : '')).filter(Boolean));
+      const allQuestions = allVerbs.filter(v => mistakeVerbs.has(v.verbe)).flatMap(v => tenseNames.flatMap(t => questionsFor(v, t)));
+      const exactMatches = allQuestions.filter(q => exactIds.has(q.id));
+      if (exactMatches.length) return exactMatches;
+      return allVerbs.filter(v => mistakeVerbs.has(v.verbe)).flatMap(v => tenses.flatMap(t => questionsFor(v, t)));
+    }
+    const isGroup = typeof state.verb === 'string' && state.verb.startsWith('group:');
+    const groupId = isGroup ? state.verb.slice(6) : '';
+    const verbs = allVerbs.filter(verb => state.verb === 'all' || (state.verb === 'common' ? common.has(verb.verbe) : isGroup ? matchesVerbGroup(verb, groupId) : verb.verbe === state.verb));
     return verbs.flatMap(verb => tenses.flatMap(tense => questionsFor(verb, tense)));
   }
   // Interleave the selected tenses so a large present-tense pool cannot crowd out
@@ -109,10 +148,54 @@
     });
     return loadingPromise;
   }
+  function activeQuestion() { return state.round?.questions[state.round.index]; }
+  function announceStation(force = false) {
+    if (!force && !state.autoSpeak) return;
+    const question = activeQuestion();
+    if (!question) return;
+    const audio = window.ATELIER_CONJUGATION_AUDIO;
+    if (audio?.speakStation) void audio.speakStation(question, tenseCopy[question.tense]);
+    else if (audio?.listen) void audio.listen(question.verb);
+  }
+  function speakRevealedAnswer() {
+    if (!state.autoSpeak) return;
+    const question = activeQuestion();
+    if (!question?.full?.length) return;
+    void window.ATELIER_CONJUGATION_AUDIO?.listen?.(question.full[0]);
+  }
+  function emitStationMistake(question, reason = 'wrong', userAnswer = '') {
+    if (!question) return;
+    const grp = classifyVerbFallback(library().find(v => v.verbe === question.verb) || question.verb);
+    const tenseInfo = tenseCopy[question.tense] || {fr:question.tense, es:'', use:''};
+    callbacks.onMistake?.({
+      id: question.id,
+      kind: 'verb',
+      verb: question.verb,
+      tense: question.tense,
+      subject: question.subject,
+      group: grp?.id || '',
+      groupId: grp?.id || '',
+      groupBadge: grp?.badge || '',
+      groupLabel: grp?.short || grp?.badge || '',
+      title: `${question.verb} → ${(question.prompt || question.subject).replace(/'/g, '’')} (${tenseInfo.fr})`,
+      subtitle: `${question.es || ''} · ${tenseInfo.es || question.tense}${grp?.badge ? ' · ' + grp.badge : ''}`,
+      detail: question.full.join(' / '),
+      explanation: grp?.memoryTrick ? `${grp.presentFormula || ''}. ${grp.memoryTrick}` : tenseInfo.use,
+      userAnswer: String(userAnswer || '').trim(),
+      speakText: question.full[0] || question.verb,
+      reason
+    });
+  }
   function newRound(questions, review = false) {
     if (!questions.length) { callbacks.toast('No hay formas disponibles con esta selección. Prueba otro verbo.'); return; }
     state.round = {runId:`verb-train-${Date.now().toString(36)}-${++runCounter}-${Math.random().toString(36).slice(2,8)}`, questions, index:0, answer:'', results:[], wrong:false, helped:false, tip:false, model:false, answered:false, feedback:'', feedbackKind:'', done:false, emitted:false, review};
-    refresh('vg-answer'); top();
+    refresh('vg-answer'); top(); announceStation();
+  }
+  function isValidVerbSelection(val) {
+    if (!val) return false;
+    if (val === 'common' || val === 'all' || val === 'mistakes') return true;
+    if (typeof val === 'string' && val.startsWith('group:')) return true;
+    return library().some(verb => verb.verbe === val);
   }
   async function start(verbeOptional) {
     state.active = true; state.generation++; state.round = null;
@@ -123,7 +206,7 @@
     }
     const generation=state.generation;
     if (!(await ensureLibrary()) || !state.active || state.generation!==generation) return;
-    if (state.verb !== 'common' && state.verb !== 'all' && !library().some(verb => verb.verbe === state.verb)) state.verb = 'common';
+    if (!isValidVerbSelection(state.verb)) state.verb = 'common';
     refresh();
   }
   async function begin() {
@@ -131,7 +214,6 @@
     if (!(await ensureLibrary()) || !state.active || state.generation!==generation) return;
     newRound(journeyQuestions(pool()));
   }
-  function activeQuestion() { return state.round?.questions[state.round.index]; }
   function check() {
     const round = state.round, question = activeQuestion();
     if (!round || round.done || round.answered || !question) return;
@@ -143,24 +225,28 @@
       round.results.push({id:question.id, clean, missed:round.wrong, assisted:round.helped, skipped:false});
       round.feedbackKind = 'correct';
       round.feedback = clean ? '¡En marcha! Lo has recordado a la primera.' : '¡Ahora sí! Volverá a aparecer en tu repaso.';
-      refresh('vg-next');
+      if (clean) callbacks.onRecover?.(question.id);
+      refresh('vg-next'); speakRevealedAnswer();
     } else {
       round.wrong = true; round.feedbackKind = 'wrong';
       round.feedback = question.accepted.some(value => unaccented(value) === unaccented(entered)) ? 'Casi. Revisa los acentos: también forman parte de la conjugación.' : 'Todavía no. Revisa el sujeto y el tiempo; puedes volver a intentarlo.';
+      emitStationMistake(question, 'wrong', round.answer);
       refresh('vg-answer');
     }
   }
   function hint() {
-    const round = state.round;
+    const round = state.round, question = activeQuestion();
     if (!round || round.done || round.answered) return;
     round.helped = true; round.model = true; round.feedbackKind = 'notice'; round.feedback = 'Modelo abierto. Escríbelo y después recupéralo en el repaso.';
-    refresh('vg-answer');
+    emitStationMistake(question, 'helped', round.answer);
+    refresh('vg-answer'); speakRevealedAnswer();
   }
   function tip() {
-    const round = state.round;
+    const round = state.round, question = activeQuestion();
     if (!round || round.done || round.answered) return;
     round.helped = true; round.tip = true; round.feedbackKind = 'notice';
     round.feedback = 'Truco abierto. Aplícalo y recupera esta forma sin ayuda en el repaso.';
+    emitStationMistake(question, 'helped', round.answer);
     refresh('vg-answer');
   }
   function contextualTip(question) {
@@ -168,11 +254,12 @@
     return `<div class="vg-tip" role="note" aria-label="Truco de conjugación">${html || '<p>Fíjate en el sujeto y el tiempo. Recuerda una forma conocida de este verbo y busca su familia. Si necesitas la forma completa, abre «Ver modelo».</p>'}</div>`;
   }
   function skip() {
-    const round = state.round;
+    const round = state.round, question = activeQuestion();
     if (!round || round.done || round.answered) return;
     round.answered = true; round.feedbackKind = 'notice'; round.feedback = 'Guardamos esta forma para repasarla. Mira el modelo y continúa.';
-    round.results.push({id:activeQuestion().id, clean:false, missed:true, assisted:round.helped, skipped:true});
-    refresh('vg-next');
+    round.results.push({id:question.id, clean:false, missed:true, assisted:round.helped, skipped:true});
+    emitStationMistake(question, 'skipped', round.answer);
+    refresh('vg-next'); speakRevealedAnswer();
   }
   function finish() {
     const round = state.round;
@@ -184,7 +271,7 @@
     const round = state.round;
     if (!round || !round.answered || round.done) return;
     if (round.index + 1 === round.questions.length) { finish(); refresh('vg-result-title'); top(); return; }
-    round.index++; round.answer=''; round.wrong=false; round.helped=false; round.tip=false; round.model=false; round.answered=false; round.feedback=''; round.feedbackKind=''; refresh('vg-answer');
+    round.index++; round.answer=''; round.wrong=false; round.helped=false; round.tip=false; round.model=false; round.answered=false; round.feedback=''; round.feedbackKind=''; refresh('vg-answer'); announceStation();
   }
   function retry() {
     const round = state.round;
@@ -200,13 +287,20 @@
   }
   function settings() {
     const rows = library();
+    const groups = verbGroupsApi()?.groups || [];
+    const mistakeCount = (callbacks.getMistakes?.() || []).filter(m => m?.kind === 'verb' || String(m?.id || '').startsWith('verb|')).length;
     const option=(id,label)=>`<option value="${esc(id)}" ${state.tense===id?'selected':''}>${esc(label)}</option>`;
     const description=tenseCopy[state.tense]?.use || (state.tense==='mixed:subjonctif'?'Alterna una acción presente o futura con una acción anterior. En cada estación verás qué subjuntivo recuperar.':'Alterna los tiempos del recorrido. Cada billete indica el tiempo exacto; la mezcla no incluye tiempos literarios.');
-    return `<div class="vg-settings"><label for="vg-verb">Tu recorrido<select id="vg-verb" data-verb-game-filter="verb"><option value="common" ${state.verb==='common'?'selected':''}>Verbos frecuentes · mezcla</option><option value="all" ${state.verb==='all'?'selected':''}>Toda mi biblioteca · mezcla</option>${rows.map(verb => `<option value="${esc(verb.verbe)}" ${state.verb===verb.verbe?'selected':''}>${esc(verb.verbe)} · ${esc(verb.es)}</option>`).join('')}</select></label><label for="vg-tense">El tiempo<select id="vg-tense" data-verb-game-filter="tense" aria-describedby="vg-route-use">${tenseGroups.map(group=>`<optgroup label="${esc(group.label)}">${tenseNames.filter(tense=>tenseCopy[tense].group===group.id).map(tense=>option(tense,tenseCopy[tense].fr)).join('')}</optgroup>`).join('')}<optgroup label="Mezclas · cambiar de tiempo">${Object.entries(tenseMixes).map(([id,item])=>option(id,item.label)).join('')}</optgroup></select></label></div><p id="vg-route-use" class="vg-route-use"><strong>Cuándo usarlo</strong> ${esc(description)}</p>`;
+    const activeGroupId = typeof state.verb === 'string' && state.verb.startsWith('group:') ? state.verb.slice(6) : '';
+    const activeGroup = groups.find(g => g.id === activeGroupId);
+    return `<div class="vg-settings"><label for="vg-verb">Tu recorrido (por grupo, errores o verbo)<select id="vg-verb" data-verb-game-filter="verb"><option value="common" ${state.verb==='common'?'selected':''}>Verbos frecuentes · mezcla</option><option value="all" ${state.verb==='all'?'selected':''}>Toda mi biblioteca · mezcla (566 verbos)</option>${mistakeCount?`<option value="mistakes" ${state.verb==='mistakes'?'selected':''}>🎯 Mis errores de verbos guardados (${mistakeCount})</option>`:''}${groups.length?`<optgroup label="Practicar por grupo o familia verbal">${groups.map(g => {const cnt = rows.filter(v => matchesVerbGroup(v, g.id)).length; return `<option value="group:${esc(g.id)}" ${state.verb===`group:${g.id}`?'selected':''}>${esc(g.short)} (${cnt} verbos)</option>`;}).join('')}</optgroup>`:''}<optgroup label="Un verbo en concreto">${rows.map(verb => `<option value="${esc(verb.verbe)}" ${state.verb===verb.verbe?'selected':''}>${esc(verb.verbe)} · ${esc(verb.es)}</option>`).join('')}</optgroup></select></label><label for="vg-tense">El tiempo<select id="vg-tense" data-verb-game-filter="tense" aria-describedby="vg-route-use">${tenseGroups.map(group=>`<optgroup label="${esc(group.label)}">${tenseNames.filter(tense=>tenseCopy[tense].group===group.id).map(tense=>option(tense,tenseCopy[tense].fr)).join('')}</optgroup>`).join('')}<optgroup label="Mezclas · cambiar de tiempo">${Object.entries(tenseMixes).map(([id,item])=>option(id,item.label)).join('')}</optgroup></select></label></div>
+    ${groups.length?`<div class="vg-group-picker" role="group" aria-label="Seleccionar grupo verbal para practicar"><span class="vg-group-picker-label">Filtra al instante por grupo o familia verbal:</span><div class="vg-group-pills">${button('select-group','Frecuentes',`data-group="common" aria-pressed="${state.verb==='common'}"`,'vg-group-pill'+(state.verb==='common'?' is-active':''))}${mistakeCount?button('select-group',`🎯 Mis errores (${mistakeCount})`,`data-group="mistakes" aria-pressed="${state.verb==='mistakes'}"`,'vg-group-pill'+(state.verb==='mistakes'?' is-active':'')):''}${groups.map(g => button('select-group',`${esc(g.code)} · ${esc(g.short.split('(')[0].trim())}`,`data-group="${esc(g.id)}" aria-pressed="${state.verb===`group:${g.id}`}"`,'vg-group-pill'+(state.verb===`group:${g.id}`?' is-active':''))).join('')}</div></div>`:''}
+    ${activeGroup?`<aside class="vg-group-trick-card" aria-live="polite"><div class="eyebrow">GRUPO SELECCIONADO · ${esc(activeGroup.badge.toUpperCase())}</div><h3>${esc(activeGroup.title)}</h3><p><strong>Fórmula:</strong> ${esc(activeGroup.presentFormula)} · <strong>${esc(activeGroup.participe)}</strong></p><p><strong>Cómo clasificarlos:</strong> ${esc(activeGroup.howToClassify)}</p><p><strong>💡 Truco para memorizar:</strong> ${esc(activeGroup.memoryTrick)}</p><p class="vg-group-samples"><strong>Ejemplos del grupo:</strong> ${activeGroup.sampleVerbs.map(v=>`<span lang="fr">${esc(v)}</span>`).join(' · ')}</p></aside>`:''}
+    <p id="vg-route-use" class="vg-route-use"><strong>Cuándo usarlo</strong> ${esc(description)}</p>`;
   }
   function setup() {
     if (!library().length && !state.loading && !state.loadError) void ensureLibrary();
-    return `<section class="vg-page"><div class="vg-intro"><div><div class="eyebrow">RECUPERA · CONJUGA · AVANZA</div><h1>El tren de<br>los <em>verbos.</em></h1><p class="vg-lead">Cada sujeto es una estación. Escribe su conjugación y lleva el tren hasta el final del recorrido.</p><div class="vg-chips"><span>11 tiempos cotidianos</span><span>Hasta 8 estaciones</span><span>Con repaso</span></div></div>${introArt()}</div><div class="vg-boarding"><div><div class="eyebrow">TU BILLETE DE HOY</div><h2>Elige el viaje</h2><p>Prueba un tiempo, combina una familia o viaja entre presente, pasado y futuro. El subjuntivo también tiene su recorrido.</p><a class="vg-text-button" href="#verb-tips">Trucos de conjugación y usos →</a></div>${state.loading?'<p role="status">Preparando las tablas de tu biblioteca…</p>':state.loadError?`<p>No se han podido abrir las tablas.</p>${button('load','Volver a intentar')}`:`${settings()}<div class="vg-boarding-bottom">${button('start',`¡Al tren! ${arrow}`,pool().length?'':'disabled aria-disabled="true"')}<span>${pool().length?`${pool().length.toLocaleString('es-ES')} estaciones disponibles`:'Este verbo no tiene formas para este tiempo. Elige otro recorrido.'}</span></div>`}</div><div class="vg-how"><div><span class="vg-how-number">1</span><h3>Mira el billete</h3><p>Fíjate en el verbo, la persona y el tiempo. La nota de uso te sitúa en contexto.</p></div><div><span class="vg-how-number">2</span><h3>Escribe de memoria</h3><p>Los acentos cuentan. Tienes un pequeño teclado para ayudarte.</p></div><div><span class="vg-how-number">3</span><h3>Vuelve a lo pendiente</h3><p>Las pistas y los errores se guardan para una segunda vuelta.</p></div></div><p class="vg-source-note">Formas exactas de tus tablas de conjugación. El passé simple tiene un recorrido opcional para relatos escritos. Las mezclas cotidianas lo dejan fuera.</p></section>`;
+    return `<section class="vg-page"><div class="vg-intro"><div><div class="eyebrow">RECUPERA · CONJUGA · AVANZA</div><h1>El tren de<br>los <em>verbos.</em></h1><p class="vg-lead">Cada sujeto es una estación con lectura en voz alta. Elige un grupo verbal (-er, -ir con -issant, -ir como partir, -dre, -prendre, -indre, -re, -oir) o tus propios errores guardados.</p><div class="vg-chips"><span>12 familias verbales</span><span>🔊 Voz en cada estación</span><span>Cuaderno de errores</span></div></div>${introArt()}</div><div class="vg-boarding"><div><div class="eyebrow">TU BILLETE DE HOY</div><h2>Elige el grupo o el viaje</h2><p>Practica por grupos morfológicos con sus trucos, combina tiempos o repasa las formas que alguna vez has fallado.</p><a class="vg-text-button" href="#verb-tips">Guía de grupos y trucos de conjugación →</a></div>${state.loading?'<p role="status">Preparando las tablas de tu biblioteca…</p>':state.loadError?`<p>No se han podido abrir las tablas.</p>${button('load','Volver a intentar')}`:`${settings()}<div class="vg-boarding-bottom">${button('start',`¡Al tren! ${arrow}`,pool().length?'':'disabled aria-disabled="true"')}<span>${pool().length?`${pool().length.toLocaleString('es-ES')} estaciones disponibles`:'Este recorrido no tiene formas para este tiempo. Elige otro recorrido.'}</span></div>`}</div><div class="vg-how"><div><span class="vg-how-number">1</span><h3>Escucha y clasifica</h3><p>Cada estación pronuncia el verbo y muestra a qué grupo pertenece (-er, -ir -issant, -dre, etc.).</p></div><div><span class="vg-how-number">2</span><h3>Escribe de memoria</h3><p>Usa el truco de su grupo verbal. Los acentos cuentan.</p></div><div><span class="vg-how-number">3</span><h3>Nada se olvida</h3><p>Todo fallo o pista queda guardado en tu cuaderno privado de errores para repasarlo cuando quieras.</p></div></div><p class="vg-source-note">Formas exactas de tus tablas de conjugación. El passé simple tiene un recorrido opcional para relatos escritos. Las mezclas cotidianas lo dejan fuera.</p></section>`;
   }
   function journey(round) {
     return `<div class="vg-journey" aria-label="${round.results.length} de ${round.questions.length} estaciones completadas"><div class="vg-train-head">${engineSVG()}</div><ol class="vg-carriages">${round.questions.map((question,index) => { const result=round.results[index]; return `<li class="vg-carriage ${result?(result.clean?'vg-complete':'vg-review'):index===round.index?'vg-current':''}" ${!round.done&&index===round.index?'aria-current="step"':''}><span class="vg-carriage-window" aria-hidden="true">${result?(result.clean?'✓':'↻'):index+1}</span><span lang="fr">${esc(question.subject)}</span><span class="sr-only">${result?(result.clean?'recordado sin ayuda':'para repasar'):index===round.index?'estación actual':'pendiente'}</span></li>`; }).join('')}</ol></div>`;
@@ -222,17 +316,24 @@
   }
   function questionPage() {
     const round=state.round, question=activeQuestion(), tense=tenseCopy[question.tense], showModel=round.model||round.answered;
-    return `<section class="vg-page vg-playing"><div class="vg-game-top">${button('hub','← Cambiar recorrido','','vg-text-button')}<span>${round.review?'SEGUNDA VUELTA':'TREN DE LOS VERBOS'} · ESTACIÓN ${round.index+1}/${round.questions.length}</span></div>${journey(round)}<div class="vg-stage"><div class="vg-station-name"><span>PROCHAINE GARE</span><strong lang="fr">${esc(tense.cue)}</strong><small>${esc(tense.es)}</small></div><div class="vg-ticket"><div class="vg-ticket-top"><span>BILLET DE CONJUGAISON</span><span>${esc(question.level)} · ${round.index+1<10?'0':''}${round.index+1}</span></div><div class="vg-ticket-verb"><div><h1 lang="fr">${esc(question.verb)}</h1><p>${esc(question.es)}</p></div><span class="vg-tense vg-${tense.tint}" lang="fr">${esc(tense.fr)}</span></div><p class="vg-use-note"><strong>En contexto</strong> ${esc(tense.use)}</p><div class="vg-ticket-perforation"></div><div class="vg-answer-row"><div class="vg-subject"><small>${question.imperative?'PERSONA':'SUJETO'}</small><strong lang="fr">${esc((question.prompt||question.subject).replace(/'/g,'’'))}</strong></div><div class="vg-answer-field"><label for="vg-answer">Escribe la conjugación</label><input id="vg-answer" data-verb-game-input="answer" lang="fr" type="text" value="${esc(round.answer)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Tu respuesta…" ${round.answered?'disabled':''} aria-describedby="vg-answer-help vg-feedback"></div></div><p id="vg-answer-help" class="vg-answer-help">${question.imperative?'Escribe la forma sin pronombre sujeto; conserva el pronombre unido con guion si lo lleva.':question.tense.startsWith('Subjonctif')?'Puedes escribir solo la forma, incluir el sujeto o añadir también que / qu’.':'Puedes escribir solo la forma o incluir el sujeto.'}${question.bodies.length>1?' Se aceptan las variantes de acuerdo recogidas en tu tabla.':''}${question.subject==='vous'&&question.bodies.length>1?' «Vous» puede ser singular o plural.':''}</p><div class="vg-accents" aria-label="Letras con acento">${['à','â','ç','é','è','ê','ë','î','ï','ô','ù','û','ü','œ','’'].map(char=>button('accent',esc(char),`data-char="${esc(char)}" ${round.answered?'disabled':''}`,'vg-accent')).join('')}</div><div class="vg-feedback ${round.feedbackKind?'vg-feedback-'+round.feedbackKind:''}" id="vg-feedback" role="status">${esc(round.feedback||'Recupera la forma sin mirar. Tómate tu tiempo.')}</div>${round.tip?contextualTip(question):''}${showModel?revealedModel(question,round.answered):''}<div class="vg-controls">${round.answered?button('next',`${round.index+1===round.questions.length?'Llegar a destino':'Siguiente estación'} ${arrow}`,'id="vg-next"'):button('check',`Comprobar ${arrow}`)}${!round.answered?`${button('tip','Ver un truco','','vg-text-button')}${button('hint','Ver modelo','','vg-text-button')}${button('skip','Dejar para el repaso','','vg-text-button')}`:''}</div></div></div>${source(question)}<p class="vg-source-note">Cada estación cuenta como recordada cuando aciertas a la primera y sin abrir trucos ni modelos. Repetir nunca te quita vidas.</p></section>`;
+    const grp = classifyVerbFallback(library().find(v => v.verbe === question.verb) || question.verb);
+    return `<section class="vg-page vg-playing"><div class="vg-game-top">${button('hub','← Cambiar recorrido','','vg-text-button')}<div class="vg-station-audio-tools">${button('speak-station','🔊 Escuchar estación','title="Leer en voz alta el verbo y el sujeto de esta estación"','vg-text-button')}${button('toggle-voice',state.autoSpeak?'🔊 Voz en cada estación: Sí':'🔇 Voz en cada estación: No',`aria-pressed="${state.autoSpeak}"`,'vg-text-button')}</div><span>${round.review?'SEGUNDA VUELTA':'TREN DE LOS VERBOS'} · ESTACIÓN ${round.index+1}/${round.questions.length}</span></div>${journey(round)}<div class="vg-stage"><div class="vg-station-name"><span>PROCHAINE GARE</span><strong lang="fr">${esc(tense.cue)}</strong><small>${esc(tense.es)}</small></div><div class="vg-ticket"><div class="vg-ticket-top"><span>BILLET DE CONJUGAISON · ${esc(grp.badge.toUpperCase())}</span><span>${esc(question.level)} · ${round.index+1<10?'0':''}${round.index+1}</span></div><div class="vg-ticket-verb"><div><h1 lang="fr">${esc(question.verb)} ${button('speak-station','🔊',`aria-label="Escuchar ${esc(question.verb)}" title="Escuchar estación"`,'vg-inline-audio')}</h1><p>${esc(question.es)} · <span class="vg-group-tag">${esc(grp.short || grp.badge)}</span></p></div><span class="vg-tense vg-${tense.tint}" lang="fr">${esc(tense.fr)}</span></div><p class="vg-use-note"><strong>En contexto</strong> ${esc(tense.use)}</p><div class="vg-ticket-perforation"></div><div class="vg-answer-row"><div class="vg-subject"><small>${question.imperative?'PERSONA':'SUJETO'}</small><strong lang="fr">${esc((question.prompt||question.subject).replace(/'/g,'’'))}</strong></div><div class="vg-answer-field"><label for="vg-answer">Escribe la conjugación</label><input id="vg-answer" data-verb-game-input="answer" lang="fr" type="text" value="${esc(round.answer)}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Tu respuesta…" ${round.answered?'disabled':''} aria-describedby="vg-answer-help vg-feedback"></div></div><p id="vg-answer-help" class="vg-answer-help">${question.imperative?'Escribe la forma sin pronombre sujeto; conserva el pronombre unido con guion si lo lleva.':question.tense.startsWith('Subjonctif')?'Puedes escribir solo la forma, incluir el sujeto o añadir también que / qu’.':'Puedes escribir solo la forma o incluir el sujeto.'}${question.bodies.length>1?' Se aceptan las variantes de acuerdo recogidas en tu tabla.':''}${question.subject==='vous'&&question.bodies.length>1?' «Vous» puede ser singular o plural.':''}</p><div class="vg-accents" aria-label="Letras con acento">${['à','â','ç','é','è','ê','ë','î','ï','ô','ù','û','ü','œ','’'].map(char=>button('accent',esc(char),`data-char="${esc(char)}" ${round.answered?'disabled':''}`,'vg-accent')).join('')}</div><div class="vg-feedback ${round.feedbackKind?'vg-feedback-'+round.feedbackKind:''}" id="vg-feedback" role="status">${esc(round.feedback||'Recupera la forma sin mirar. Tómate tu tiempo.')}</div>${round.tip?contextualTip(question):''}${showModel?revealedModel(question,round.answered):''}<div class="vg-controls">${round.answered?button('next',`${round.index+1===round.questions.length?'Llegar a destino':'Siguiente estación'} ${arrow}`,'id="vg-next"'):button('check',`Comprobar ${arrow}`)}${!round.answered?`${button('tip','Ver truco del grupo','','vg-text-button')}${button('hint','Ver modelo','','vg-text-button')}${button('skip','Dejar para el repaso','','vg-text-button')}`:''}</div></div></div>${source(question)}<p class="vg-source-note">Cada estación cuenta como recordada cuando aciertas a la primera y sin abrir trucos ni modelos. Los fallos se guardan automáticamente en tu cuaderno privado de errores.</p></section>`;
   }
   function results() {
     const round=state.round, clean=round.results.filter(result=>result.clean).length, total=round.questions.length, pending=round.results.filter(result=>!result.clean), stars=clean===0?0:clean/total>=.8?3:clean/total>=.5?2:1;
-    return `<section class="vg-page vg-results"><div class="vg-result-hero">${engineSVG()}<div class="eyebrow">HAS LLEGADO A DESTINO</div><h1 id="vg-result-title" tabindex="-1">¡Buen viaje!</h1><div class="vg-stars" aria-label="${stars} de 3 estrellas de esta ronda">${[1,2,3].map(star=>`<span class="${star<=stars?'vg-earned':''}" aria-hidden="true">★</span>`).join('')}</div><p class="vg-result-score"><strong>${clean}<small>/${total}</small></strong><span>formas recordadas<br>a la primera y sin ayuda</span></p><p>${pending.length?`Te esperan ${pending.length} ${pending.length===1?'forma':'formas'} para una segunda vuelta.`:'¡Todas las estaciones superadas sin ayuda! Prueba otro tiempo o mezcla los verbos.'}</p><p class="vg-star-guide">Estrellas de esta ronda: ★ Alguna sin ayuda · ★★ Al menos 50 % · ★★★ Al menos 80 %</p></div>${journey(round)}<div class="vg-result-actions">${pending.length?button('retry',`Repasar ${pending.length} ${pending.length===1?'forma':'formas'} ${arrow}`):button('start',`Otro viaje ${arrow}`)}${button('hub','Elegir otro recorrido','','vg-button vg-secondary')}</div>${pending.length?`<div class="vg-review-list"><h2>En tu próxima vuelta</h2>${round.questions.filter(question=>pending.some(result=>result.id===question.id)).map(question=>`<div><span><strong lang="fr">${esc(question.verb)}</strong> · ${esc(tenseCopy[question.tense].fr)}</span><span lang="fr">${esc(question.subject)}</span><small>${round.results.find(result=>result.id===question.id)?.assisted?'Con pista':'Para afianzar'}</small></div>`).join('')}</div>`:''}</section>`;
+    return `<section class="vg-page vg-results"><div class="vg-result-hero">${engineSVG()}<div class="eyebrow">HAS LLEGADO A DESTINO</div><h1 id="vg-result-title" tabindex="-1">¡Buen viaje!</h1><div class="vg-stars" aria-label="${stars} de 3 estrellas de esta ronda">${[1,2,3].map(star=>`<span class="${star<=stars?'vg-earned':''}" aria-hidden="true">★</span>`).join('')}</div><p class="vg-result-score"><strong>${clean}<small>/${total}</small></strong><span>formas recordadas<br>a la primera y sin ayuda</span></p><p>${pending.length?`Te esperan ${pending.length} ${pending.length===1?'forma':'formas'} para una segunda vuelta (y han quedado registradas en tu cuaderno de errores).`:'¡Todas las estaciones superadas sin ayuda! Prueba otro grupo o mezcla los tiempos.'}</p><p class="vg-star-guide">Estrellas de esta ronda: ★ Alguna sin ayuda · ★★ Al menos 50 % · ★★★ Al menos 80 %</p></div>${journey(round)}<div class="vg-result-actions">${pending.length?button('retry',`Repasar ${pending.length} ${pending.length===1?'forma':'formas'} ${arrow}`):button('start',`Otro viaje ${arrow}`)}${button('hub','Elegir otro grupo o recorrido','','vg-button vg-secondary')}<a class="vg-button vg-secondary" href="#mistakes">🔒 Ver mi cuaderno de errores</a></div>${pending.length?`<div class="vg-review-list"><h2>En tu próxima vuelta</h2>${round.questions.filter(question=>pending.some(result=>result.id===question.id)).map(question=>`<div><span><strong lang="fr">${esc(question.verb)}</strong> · ${esc(tenseCopy[question.tense].fr)}</span><span lang="fr">${esc(question.subject)}</span><small>${round.results.find(result=>result.id===question.id)?.assisted?'Con pista':'Para afianzar'}</small></div>`).join('')}</div>`:''}</section>`;
   }
   function render() { return !state.round?setup():state.round.done?results():questionPage(); }
   async function handle(action, element) {
     if (action==='load') { state.loadError=false; await ensureLibrary(); refresh(); }
     else if (action==='start') await begin();
     else if (action==='hub') { state.round=null; refresh(); top(); }
+    else if (action==='select-group') {
+      const g = element?.dataset?.group;
+      if (g) { state.verb = (g==='common'||g==='all'||g==='mistakes') ? g : `group:${g}`; refresh(); }
+    }
+    else if (action==='speak-station') announceStation(true);
+    else if (action==='toggle-voice') { state.autoSpeak=!state.autoSpeak; refresh(); if(state.autoSpeak) announceStation(true); }
     else if (action==='check') check();
     else if (action==='hint') hint();
     else if (action==='tip') tip();
@@ -252,7 +353,7 @@
   function input(event) { if (event.target?.dataset?.verbGameInput==='answer'&&state.round&&!state.round.done&&!state.round.answered) state.round.answer=String(event.target.value).slice(0,160); }
   function change(event) {
     const key=event.target?.dataset?.verbGameFilter, value=event.target?.value;
-    if (key==='verb'&&(value==='common'||value==='all'||library().some(verb=>verb.verbe===value))) { state.verb=value; refresh(); }
+    if (key==='verb'&&isValidVerbSelection(value)) { state.verb=value; refresh(); }
     if (key==='tense'&&(Object.hasOwn(tenseMixes,value)||tenseNames.includes(value))) { state.tense=value; refresh(); }
   }
   function leave() { state.active=false; state.generation++; state.round=null; }

@@ -2,6 +2,9 @@ name: Publicar Atelier en GitHub Pages
 
 # Ejecución manual. Configura Pages con GitHub Actions antes de ejecutarlo.
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
